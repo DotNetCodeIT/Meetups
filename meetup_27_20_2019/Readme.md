@@ -1,12 +1,12 @@
-# Novità in arrivo da 
+# Novità in arrivo dalla .net conf
 
 Ci siamo quasi a fine ottobre, nella [.Net conf del 23-25 ottobre 2019][dot-net-conf] verrà rilasciata in GA la versione finale di __.net code 3__.
 
-> Per poter vedere prima degli altri __.net core 3__ e cominciare ad apprezzare i cambiamenti potete scaricare i pacchetti che servono dalla [pagina ufficiale di .net code][dot-netcode-official-download] ppure più semplicemente passare al canale [preview di Visual studio][vs-preview-channel], _se siete utenti mac o linux di Visual  Studio probabilmente sapete già come passare al canale preview senza bisogno di maggiori informazioni_. Al momento in cui scrivo (fine agosto 2019) è stata rilasciata la __preview 8 di .net core 3__, come sempre non ci sono garanzie sul fatto che tutte le caratteristiche presenti nella preview siano poi effettivamente portate in GA ma data la vicinanza del rilascio sono ragionevolmente confidente.
+> Per poter vedere prima degli altri __.net core 3__ e cominciare ad apprezzare i cambiamenti potete scaricare i pacchetti che servono dalla [pagina ufficiale di .net code][dot-netcode-official-download] oppure più semplicemente passare al canale [preview di Visual studio][vs-preview-channel], _se siete utenti mac o linux di Visual  Studio probabilmente sapete già come passare al canale preview senza bisogno di maggiori informazioni_. Al momento in cui scrivo (fine agosto 2019) è stata rilasciata la __preview 8 di .net core 3__, come sempre non ci sono garanzie sul fatto che tutte le caratteristiche presenti nella preview siano poi effettivamente portate in GA ma data la vicinanza del rilascio sono ragionevolmente confidente.
 >
 > Vi segnalo inoltre il modulo __[dot net try][dot-net-try]__ per .net a riga di comando che apre una pagina web in cui scrivere codice in c#, utile sia per testare le novità del linguaggio sia per fare dei piccoli test senza creare decine di progetti inutili sulle nostre macchine.
 
-Le novità, al ivello di lingiaggio che saranno introdotte dalla [.Net conf del 23-25 ottobre 2019][dot-net-conf] saranno principalmente su due fronti:
+Le novità, al livello di linguaggio che saranno introdotte dalla [.Net conf del 23-25 ottobre 2019][dot-net-conf] saranno principalmente su due fronti:
 
 * Novità di c# versione 8
 * .Net Core Versione 3
@@ -22,7 +22,7 @@ Potete trovare tutte le novità su [Novità di c# 8][whats-new-csharp-8] e sulla
 ### Membri in sola lettura
 
 E' stato introdotto il modificatore __readonly__ su qualunque membro di una __struct__.
-All'inteno di un metodo marcato come readonly non è possibile modificare il contenuto di un field perchè genererebbe un errore di compliazione. Anche il richiamare un metodo non readonly genera un warning.
+All'interno di un metodo marcato come readonly non è possibile modificare il contenuto di un field perchè genererebbe un errore di compilazione. Anche il richiamare un metodo non readonly genera un warning.
 Questo rende più difensivo il nostro codice anche se, purtroppo, questa caratteristica è limitata alle sole __struct__ e non alle classi.
 
 ```c#
@@ -50,17 +50,17 @@ Questo rende più difensivo il nostro codice anche se, purtroppo, questa caratte
     }
 ```
 
-### Modifiche alle interfaccie
+### Modifiche alle interfacce
 
-Sono state introdotte varie modifiche alle interfaccie in c# 8 in particolare sono stati introdotti i metodi di default nell'interfaccia e, quasi come conseguenza naturale, la possibilità di inserire metodi statici nelle interfaccie.
+Sono state introdotte varie modifiche alle interfacce in c# 8 in particolare sono stati introdotti i metodi di default nell'interfaccia e, quasi come conseguenza naturale, la possibilità di inserire metodi statici nelle interfacce.
 
 > A me fa parecchio strano scrivere __definizione di metodi nell'interfaccia__
 
-#### Membri di interfaccie predefiniti
+#### Membri di interfacce predefiniti
 
-E' Possibile "definire nell'interfaccia" dei metodi di default. _Questo rende le interfaccie un pochino più simili alle classi astratte._
+E' Possibile "definire nell'interfaccia" dei metodi di default. _Questo rende le interfacce un pochino più simili alle classi astratte._
 
-> Questa nuova funzinalità è molto utile se si vuole garantire la retrocompatibilità con le versioni precedenti di una certa api.
+> Questa nuova funzionalità è molto utile se si vuole garantire la retro compatibilità con le versioni precedenti di una certa api.
 
 ```c#
     public interface IDefaultMember
@@ -90,7 +90,7 @@ Ipotiziamo di aver definito due classi concrete DefaultMember (che non rifefinis
 
 #### Membri statici di interfaccie
 
-E' possibile definire dei membri statici di interfaccie che varranno per tutte le classi derivate.
+È possibile definire dei membri statici di interfacce che varranno per tutte le classi derivate.
 
 ```c#
     public interface IStaticMethodInterface
@@ -124,11 +124,11 @@ Ipotizzando di avere due classi concrete in cui __non__ è stata ridefinita Prin
     staticImplementation.PrintHello(); // Ciao mondo
 ```
 
-> Combinando i metodi statici definiti nelle interfaccie e le implementazioni di default dei metodi è possibile [Estendere l'impementazione predefinita][extend-the-default-implementation]
+> Combinando i metodi statici definiti nelle interfacce e le implementazioni di default dei metodi è possibile [Estendere l'implementazione predefinita][extend-the-default-implementation]
 
 ## Più pattern per l'operatore switch
 
-Questa feature è la mia preferita perchè è presente anche in altri linguaggi moderni come swift.
+Questa feature è la mia preferita perché presente anche in altri linguaggi moderni come swift.
 
 > La documentazione recita _questa feature rappresenta il primo tentativo andare verso un paradigma che divida dati e funzionalità_ e noi non possiamo che esserne felici.
 
@@ -136,7 +136,7 @@ Questa feature è la mia preferita perchè è presente anche in altri linguaggi 
 
 Le espressioni switch sono il naturale proseguimento dei metodi "senza corpo" o meglio delle [Expression body definition][expression-body-definition].
 
-Questa caratteristica rende notevolmente più snello e legibile il codice di alcuni tipi di switch.
+Questa caratteristica rende notevolmente più snello e leggibile il codice di alcuni tipi di switch.
 
 ```c#
   private static string PatternMatchingSwitch(LoggingLevel loggingLevel)
@@ -152,7 +152,6 @@ Questa caratteristica rende notevolmente più snello e legibile il codice di alc
 ```
 
 notare l'inserimento di _ al posto di __default__
-
 
 [dot-netcode-official-download]: https://dotnet.microsoft.com/download/dotnet-core/3.0 ".net code official download"
 [vs-preview-channel]: https://visualstudio.microsoft.com/vs/preview/ "Visual studio preview chanel"
