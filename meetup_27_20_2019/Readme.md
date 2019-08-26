@@ -2,7 +2,7 @@
 
 Ci siamo quasi a fine ottobre, nella [.Net conf del 23-25 ottobre 2019][dot-net-conf] verrà rilasciata in GA la versione finale di __.net code 3__.
 
-> Per poter vedere prima degli altri __.net core 3__ e cominciare ad apprezzare i cambiamenti potete scaricare i pacchetti che servono dalla [pagina ufficiale di .net code][dot-netcode-official-download] oppure più semplicemente passare al canale [preview di Visual studio][vs-preview-channel], _se siete utenti mac o linux di Visual  Studio probabilmente sapete già come passare al canale preview senza bisogno di maggiori informazioni_. Al momento in cui scrivo (fine agosto 2019) è stata rilasciata la __preview 8 di .net core 3__, come sempre non ci sono garanzie sul fatto che tutte le caratteristiche presenti nella preview siano poi effettivamente portate in GA ma data la vicinanza del rilascio sono ragionevolmente confidente.
+> Per poter vedere prima degli altri __.net core 3__ e cominciare ad apprezzare i cambiamenti potete scaricare i pacchetti che servono dalla [pagina ufficiale di .net core][dot-netcode-official-download] oppure più semplicemente passare al canale [preview di Visual studio][vs-preview-channel], _se siete utenti mac o linux di Visual  Studio probabilmente sapete già come passare al canale preview senza bisogno di maggiori informazioni_. Al momento in cui scrivo (fine agosto 2019) è stata rilasciata la __preview 8 di .net core 3__, come sempre non ci sono garanzie sul fatto che tutte le caratteristiche presenti nella preview siano poi effettivamente portate in GA ma data la vicinanza del rilascio sono ragionevolmente confidente.
 >
 > Vi segnalo inoltre il modulo __[dot net try][dot-net-try]__ per .net a riga di comando che apre una pagina web in cui scrivere codice in c#, utile sia per testare le novità del linguaggio sia per fare dei piccoli test senza creare decine di progetti inutili sulle nostre macchine.
 
@@ -153,7 +153,7 @@ Questa caratteristica rende notevolmente più snello e leggibile il codice di al
 
 notare l'inserimento di _ al posto di __default__
 
-[dot-netcode-official-download]: https://dotnet.microsoft.com/download/dotnet-core/3.0 ".net code official download"
+[dot-netcode-official-download]: https://dotnet.microsoft.com/download/dotnet-core/3.0 ".net core official download"
 [vs-preview-channel]: https://visualstudio.microsoft.com/vs/preview/ "Visual studio preview chanel"
 [dot-net-try]: https://github.com/dotnet/try
 [dot-net-conf]: https://www.dotnetconf.net/

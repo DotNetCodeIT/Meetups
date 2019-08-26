@@ -1,16 +1,14 @@
 ﻿<Properties StartupConfiguration="{1D3541F0-CFB3-4E60-8ECD-88ED5832A345}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="NewsOfCSharp8/Program.cs">
     <Files>
-      <File FileName="NewsOfCSharp8/Program.cs" Line="16" Column="1" />
+      <File FileName="NewsOfCSharp8/Program.cs" Line="46" Column="28" />
       <File FileName="NewsOfCSharp8/readonly-member/models/PointNew.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="NewsFromDotNetConf" expanded="True">
-            <Node name="NewsOfCSharp8" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+          <Node name="NewsFromDotNetConf" expanded="True" selected="True">
+            <Node name="NewsOfCSharp8" expanded="True" />
           </Node>
         </State>
       </Pad>
