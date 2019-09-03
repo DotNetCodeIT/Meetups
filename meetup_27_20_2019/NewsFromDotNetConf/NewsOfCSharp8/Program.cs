@@ -1,6 +1,7 @@
 ﻿using System;
 using NewsOfCSharp8.defaultinterfacesmember.Implementations;
 using NewsOfCSharp8.defaultinterfacesmember.Interfaces;
+using NewsOfCSharp8.Disposable.Implementations;
 using NewsOfCSharp8.patternmatching.Implementations;
 using NewsOfCSharp8.patternmatching.Models;
 using NewsOfCSharp8.PositionalPatterns.Implementations;
@@ -17,7 +18,14 @@ namespace NewsOfCSharp8
             //DefaultMembersInterfaces();
             //StaticMembersInterfaces();
             //PatternMatching();
-            PositionalPattern();
+            //PositionalPattern();
+
+            UsingDisposable();
+
+            string d = null;
+
+            
+
         }
 
         /// <summary>
@@ -107,6 +115,14 @@ namespace NewsOfCSharp8
 
             positionalPattern.PrintWhenClause();
         }
+
+        public static void UsingDisposable()
+        {
+            var disposable = new UsingDispodable();
+            disposable.Print();
+        }
+
+
 
 
 

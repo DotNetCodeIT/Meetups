@@ -232,15 +232,69 @@ Il pointModel viene Decostruito ed iserito automaticamente in una tupla, poi vie
     };
 ```
 
+## Using declaration
+
+Con c# 8 le definizioni di using risultano notevolmente semplificate (sopratutto nella lettura)
+
+```c#
+    public void Print()
+    {
+        Console.WriteLine($"pre using declared");
+        using var disposableClass = new DisposableClass();
+        using var disposableStruct = new DisposableStruct();
+        // different from using (var d = new DisposableClass())
+
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine($"post using declared ");
+
+        Console.WriteLine($"After this line the objects dispose");
+    }
+```
+
+Notare il _punto e virgola_ alla fine dello __using__ e che in questa versione lo __using__ non usa le parentesi.
+La _disposableClass_ viene rilasciata alla fine del metodo.
+
+> Dal punto di vista pratico se la variabile dichiarada nello using puo' vivere fino alla fine del metodo che lo contiene allora non è più necessario inserire il blocco di codice sotto lo using.
+
+## Funzioni locali statiche
+
+Le funzioni locali statiche sono un'estenzione delle funzioni locali già presenti nel linguaggio
+
+```c#
+    public void Print()
+    {
+        int a = 5;
+        int b = 6;
+
+        Console.WriteLine(Sum(a, b));
+
+        static int Sum(int _a, int _b)
+        {
+            // return a + b; a e b sono inaccessibili perchè la funzione è statica
+            return _a + _b;
+        }
+    }
+```
+
+Dal punto di vista pratico se si dichiara una funzione statica locale allora le variabili dichiarate al di fuori del corpo della funzione statica allora queste variabili risultano inaccessibili.
+
+
 
 Potete vedere esempi più avanzatati di pattern matching nell'[Esercitazione: Uso di funzionalità di criteri di ricerca per estendere i tipi di dati][tutorials-pattern-matching]
 
 [dot-netcode-official-download]: https://dotnet.microsoft.com/download/dotnet-core/3.0 ".net core official download"
+
 [vs-preview-channel]: https://visualstudio.microsoft.com/vs/preview/ "Visual studio preview chanel"
-[dot-net-try]: https://github.com/dotnet/try
-[dot-net-conf]: https://www.dotnetconf.net/
-[whats-new-csharp-8]: https://docs.microsoft.com/it-it/dotnet/csharp/whats-new/csharp-8
-[github-try-samples-csharp-8]: https://github.com/dotnet/try-samples/tree/master/csharp8
-[extend-the-default-implementation]: https://docs.microsoft.com/it-it/dotnet/csharp/tutorials/default-interface-members-versions#extend-the-default-implementation
-[expression-body-definition]:https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition
-[tutorials-pattern-matching]: https://docs.microsoft.com/it-it/dotnet/csharp/tutorials/pattern-matching
+
+[dot-net-try]: https://github.com/dotnet/try ".net try"
+
+[dot-net-conf]: https://www.dotnetconf.net/ ".net Conf"
+[whats-new-csharp-8]: https://docs.microsoft.com/it-it/dotnet/csharp/whats-new/csharp-8 "News on C# 8"
+
+[github-try-samples-csharp-8]: https://github.com/dotnet/try-samples/tree/master/csharp8 "Esempi di c# 8"
+
+[extend-the-default-implementation]: https://docs.microsoft.com/it-it/dotnet/csharp/tutorials/default-interface-members-versions#extend-the-default-implementation "Default interface member"
+
+[expression-body-definition]:https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition "Expression body definition"
+
+[tutorials-pattern-matching]: https://docs.microsoft.com/it-it/dotnet/csharp/tutorials/pattern-matching "Esercitazioni sul Pattern matching"

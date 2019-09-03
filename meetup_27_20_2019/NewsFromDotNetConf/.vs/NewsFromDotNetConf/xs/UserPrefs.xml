@@ -1,29 +1,22 @@
-﻿<Properties StartupConfiguration="{1D3541F0-CFB3-4E60-8ECD-88ED5832A345}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NewsOfCSharp8/PositionalPatterns/Implementations/PositionalPattern.cs">
+﻿<Properties StartupConfiguration="{F9E5983A-8147-4973-8DCD-3347167345C3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NewsOfCSharp8/NonNullableObject/Implementations/NonNullable.cs">
     <Files>
-      <File FileName="NewsOfCSharp8/Program.cs" Line="98" Column="54" />
-      <File FileName="NewsOfCSharp8/pattern-matching/Implementations/PatternMatching.cs" Line="18" Column="16" />
-      <File FileName="NewsOfCSharp8/Deconstruct/Model/PointModel.cs" Line="6" Column="1" />
-      <File FileName="NewsOfCSharp8/PositionalPatterns/Implementations/PositionalPattern.cs" Line="21" Column="30" />
-      <File FileName="NewsOfCSharp8/pattern-matching/Models/LoggingLevel.cs" Line="1" Column="1" />
+      <File FileName="NewsOfCSharp8/NonNullableObject/Models/NonNullableObj.cs" Line="10" Column="55" />
+      <File FileName="NewsOfCSharp8/NonNullableObject/Implementations/NonNullable.cs" Line="10" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NewsFromDotNetConf" expanded="True">
             <Node name="NewsOfCSharp8" expanded="True">
-              <Node name="default-interfaces-member" expanded="True">
-                <Node name="Implementations" expanded="True" />
-              </Node>
-              <Node name="pattern-matching" expanded="True">
-                <Node name="Implementations" expanded="True" />
+              <Node name="NonNullableObject" expanded="True">
+                <Node name="Implementations" expanded="True">
+                  <Node name="NonNullable.cs" selected="True" />
+                </Node>
                 <Node name="Models" expanded="True" />
               </Node>
               <Node name="PositionalPatterns" expanded="True">
-                <Node name="Implementations" expanded="True">
-                  <Node name="PositionalPattern.cs" selected="True" />
-                </Node>
-                <Node name="Model" expanded="True" />
+                <Node name="Implementations" expanded="True" />
               </Node>
             </Node>
           </Node>

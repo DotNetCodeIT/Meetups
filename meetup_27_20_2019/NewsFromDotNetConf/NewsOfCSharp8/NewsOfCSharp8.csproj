@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+  <LangVersion>8.0</LangVersion>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
@@ -13,5 +14,13 @@
     <Folder Include="PositionalPatterns\" />
     <Folder Include="PositionalPatterns\Model\" />
     <Folder Include="PositionalPatterns\Implementations\" />
+    <Folder Include="Disposable\" />
+    <Folder Include="Disposable\Models\" />
+    <Folder Include="Disposable\Implementations\" />
+    <Folder Include="LocalStaticFunction\" />
+    <Folder Include="LocalStaticFunction\Implementations\" />
+    <Folder Include="NonNullableObject\" />
+    <Folder Include="NonNullableObject\Models\" />
+    <Folder Include="NonNullableObject\Implementations\" />
   </ItemGroup>
 </Project>
