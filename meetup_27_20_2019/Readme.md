@@ -132,7 +132,7 @@ Questa feature è la mia preferita perché presente anche in altri linguaggi mod
 
 > La documentazione recita _questa feature rappresenta il primo tentativo andare verso un paradigma che divida dati e funzionalità_ e noi non possiamo che esserne felici.
 
-## switch expression
+### Switch expression
 
 Le espressioni switch sono il naturale proseguimento dei metodi "senza corpo" o meglio delle [Expression body definition][expression-body-definition].
 
@@ -140,18 +140,100 @@ Questa caratteristica rende notevolmente più snello e leggibile il codice di al
 
 ```c#
   private static string PatternMatchingSwitch(LoggingLevel loggingLevel)
-            => loggingLevel switch
-            {
+    => loggingLevel switch
+    {
 
-                LoggingLevel.Alert => "Alert",
-                LoggingLevel.Warning => "Warning",
-                LoggingLevel.Info => "Info",
-                LoggingLevel.Debug => "Debug",
-                _ => "Other"
-            };
+        LoggingLevel.Alert => "Alert",
+        LoggingLevel.Warning => "Warning",
+        LoggingLevel.Info => "Info",
+        LoggingLevel.Debug => "Debug",
+        _ => "Other"
+    };
 ```
 
 notare l'inserimento di _ al posto di __default__
+
+Le _switch expression_ risultano, come è ovvio particolarmente comode in tutte quelle situazioni in cui è necessario mappare dei valori.
+
+### Property patterns
+
+Il property pattern è di gran lunga la feature nuova di c# 8 che preferisco perchè fin da quando è uscita su swift la ho sempre invidiata parecchio.
+
+in sostanza questa nuova caratteristica consente (qui scritta in forma compatta) consente di usare una classe in un istruzione di switch e di utilizzare come filtyro contemporaneamente più field della classe.
+
+L'esempio qui sotto è di facile interpretazione: dato un oggetti City che contiene sia il nome di uno stato che il nome di una città la funzione qui ssotto estrare una label.
+Questo esempio, di scarso significato pratico, serve solo a dimostrare quanto sia facile con c# 8 fare pattern matching su oggetti complessi senza far ricorso a if nei rami dello switch.
+
+```c#
+    private string GetStateName(City address)
+        => address switch
+        {
+            { Country: "IT", Name: "Rome" } => "Italy (Rome)",
+            { Country: _, Name:"Paris" } => "France or Texas",
+            { Country: "IT",Name: _} => "Italy",
+            _ => "Other"
+        };
+```
+
+__Con il _Property pattern_ è possibile usare la forma estesa, e più familiare, dello switch; lo trovate nella repository di gitbhub allegata__
+
+### Tuple pattern
+
+Di significato molto simile al property pattern è possibile usare le Tuple come argomento dello switch
+
+```c#
+    public string RockPaperScissors(string country, string city)
+        => (country, city) switch
+        {
+            ("IT", "Rome") => "Italy (Rome)",
+            (_, "Paris") => "France or Texas",
+            ("IT", _) => "Italy",
+            _ => "Other", // Forma compatta per ( _, _) => "Other"
+        };
+```
+
+### Positional Pattern
+
+E' stato introdotto il Decostruttore per alcuni tipi.
+Il Decostruttore di suo non è molto utile perchè "appiattisce" un oggetto in una lista di parametri.
+
+```c#
+    public class PointModel
+    {
+
+        public int X { get; }
+        public int Y { get; }
+
+        public PointModel(int x, int y) => (X, Y) = (x, y);
+
+        public void Deconstruct(out int x, out int y) =>
+            (x, y) = (X, Y);
+    }
+```
+
+Di suo non è un costrutto molto utile, si puo' già fare con le vecchie versioni di c# usando una nomenclatura "non standard".
+Accoppiato con la clausula _when_ degli switch invece risulta particolarmente efficace.
+
+In questo esempio possiamo vedere quanto sia facile mappare un punto in un piano cartesiano per capire su quale quadrante è  posizionato.
+Il pointModel viene Decostruito ed iserito automaticamente in una tupla, poi viene usata la clausula when.
+
+> La clausula _when_ più che l'estenzione dello switch possiamo vederlo come un modo per rendere più elegante _else if_
+
+```c#
+    private string WhenClause() => pointModel switch
+    {
+        (0, 0) => "origin",
+        var (x, y) when x > 0 && y > 0 => "dx-up",
+        var (x, y) when x < 0 && y > 0 => "sx-up",
+        var (x, y) when x < 0 && y < 0 => "sx-dw",
+        var (x, y) when x > 0 && y < 0 => "dx-dw",
+        var (_, _) => "border",
+        _ => "Unknown"
+    };
+```
+
+
+Potete vedere esempi più avanzatati di pattern matching nell'[Esercitazione: Uso di funzionalità di criteri di ricerca per estendere i tipi di dati][tutorials-pattern-matching]
 
 [dot-netcode-official-download]: https://dotnet.microsoft.com/download/dotnet-core/3.0 ".net core official download"
 [vs-preview-channel]: https://visualstudio.microsoft.com/vs/preview/ "Visual studio preview chanel"
@@ -161,3 +243,4 @@ notare l'inserimento di _ al posto di __default__
 [github-try-samples-csharp-8]: https://github.com/dotnet/try-samples/tree/master/csharp8
 [extend-the-default-implementation]: https://docs.microsoft.com/it-it/dotnet/csharp/tutorials/default-interface-members-versions#extend-the-default-implementation
 [expression-body-definition]:https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition
+[tutorials-pattern-matching]: https://docs.microsoft.com/it-it/dotnet/csharp/tutorials/pattern-matching

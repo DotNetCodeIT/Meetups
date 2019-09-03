@@ -1,7 +1,10 @@
 ﻿using System;
 using NewsOfCSharp8.defaultinterfacesmember.Implementations;
 using NewsOfCSharp8.defaultinterfacesmember.Interfaces;
+using NewsOfCSharp8.patternmatching.Implementations;
 using NewsOfCSharp8.patternmatching.Models;
+using NewsOfCSharp8.PositionalPatterns.Implementations;
+using NewsOfCSharp8.PositionalPatterns.Model;
 using NewsOfCSharp8.readolymember.Models;
 
 namespace NewsOfCSharp8
@@ -12,7 +15,9 @@ namespace NewsOfCSharp8
         {
             //ReadOnlyMember();
             //DefaultMembersInterfaces();
-            StaticMembersInterfaces();
+            //StaticMembersInterfaces();
+            //PatternMatching();
+            PositionalPattern();
         }
 
         /// <summary>
@@ -87,35 +92,21 @@ namespace NewsOfCSharp8
 
 
 
-        private static string PatternMatchingSwitch(LoggingLevel loggingLevel)
-            => loggingLevel switch
-            {
-
-                LoggingLevel.Alert => "Alert",
-                LoggingLevel.Warning => "Warning",
-                LoggingLevel.Info => "Info",
-                LoggingLevel.Debug => "Debug",
-                _ => "Other"
-            };
-
-
-        private static string GetStateName(Address address)
-            => address switch
-            {
-                { State: "IT", City: "Rome" } => "Italia"
-            };
-
-        private static string GetStateNameEx(Address address)
+        private static void PatternMatching()
         {
-            switch (address)
-            {
-                case { State: "IT", City: "Rome" }:
-                    return "Italia;";
-                default:
-                    return "default";
-            }
+
+            var patternMatching = new PatternMatching();
+            patternMatching.PrintPatternMatching();
         }
 
+        private static void PositionalPattern()
+        {
+
+            var positionalPattern = new PositionalPattern(new PointModel(9,42));
+            positionalPattern.PrintDeconstructor();
+
+            positionalPattern.PrintWhenClause();
+        }
 
 
 

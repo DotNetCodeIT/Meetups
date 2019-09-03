@@ -1,16 +1,36 @@
 ﻿<Properties StartupConfiguration="{1D3541F0-CFB3-4E60-8ECD-88ED5832A345}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NewsOfCSharp8/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NewsOfCSharp8/PositionalPatterns/Implementations/PositionalPattern.cs">
     <Files>
-      <File FileName="NewsOfCSharp8/Program.cs" Line="46" Column="28" />
-      <File FileName="NewsOfCSharp8/readonly-member/models/PointNew.cs" />
+      <File FileName="NewsOfCSharp8/Program.cs" Line="98" Column="54" />
+      <File FileName="NewsOfCSharp8/pattern-matching/Implementations/PatternMatching.cs" Line="18" Column="16" />
+      <File FileName="NewsOfCSharp8/Deconstruct/Model/PointModel.cs" Line="6" Column="1" />
+      <File FileName="NewsOfCSharp8/PositionalPatterns/Implementations/PositionalPattern.cs" Line="21" Column="30" />
+      <File FileName="NewsOfCSharp8/pattern-matching/Models/LoggingLevel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="NewsFromDotNetConf" expanded="True" selected="True">
-            <Node name="NewsOfCSharp8" expanded="True" />
+          <Node name="NewsFromDotNetConf" expanded="True">
+            <Node name="NewsOfCSharp8" expanded="True">
+              <Node name="default-interfaces-member" expanded="True">
+                <Node name="Implementations" expanded="True" />
+              </Node>
+              <Node name="pattern-matching" expanded="True">
+                <Node name="Implementations" expanded="True" />
+                <Node name="Models" expanded="True" />
+              </Node>
+              <Node name="PositionalPatterns" expanded="True">
+                <Node name="Implementations" expanded="True">
+                  <Node name="PositionalPattern.cs" selected="True" />
+                </Node>
+                <Node name="Model" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -18,10 +38,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/leonardodottavi/sourcetree/github/DotNetCodeMeetups/meetup_27_20_2019/NewsFromDotNetConf/NewsOfCSharp8/Program.cs" relfile="NewsOfCSharp8/Program.cs" line="15" column="1" />
-      <Breakpoint file="/Users/leonardodottavi/sourcetree/github/DotNetCodeMeetups/meetup_27_20_2019/NewsFromDotNetConf/NewsOfCSharp8/Program.cs" relfile="NewsOfCSharp8/Program.cs" line="16" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

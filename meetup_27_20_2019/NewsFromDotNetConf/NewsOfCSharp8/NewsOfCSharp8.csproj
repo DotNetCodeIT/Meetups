@@ -8,4 +8,10 @@
   <ItemGroup>
     <None Remove="Readme.md" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pattern-matching\Implementations\" />
+    <Folder Include="PositionalPatterns\" />
+    <Folder Include="PositionalPatterns\Model\" />
+    <Folder Include="PositionalPatterns\Implementations\" />
+  </ItemGroup>
 </Project>
