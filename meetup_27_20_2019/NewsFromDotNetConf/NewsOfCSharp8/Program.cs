@@ -5,6 +5,7 @@ using NewsOfCSharp8.AsynchronousStreams.Implementations;
 using NewsOfCSharp8.defaultinterfacesmember.Implementations;
 using NewsOfCSharp8.defaultinterfacesmember.Interfaces;
 using NewsOfCSharp8.Disposable.Implementations;
+using NewsOfCSharp8.IndexIntervals.Implememtations;
 using NewsOfCSharp8.patternmatching.Implementations;
 using NewsOfCSharp8.patternmatching.Models;
 using NewsOfCSharp8.PositionalPatterns.Implementations;
@@ -24,7 +25,8 @@ namespace NewsOfCSharp8
             //PositionalPattern();
 
             //UsingDisposable();
-            AsyncStream().Wait();
+            //AsyncStream().Wait();
+            IntervalRange();
         }
 
         /// <summary>
@@ -127,6 +129,14 @@ namespace NewsOfCSharp8
             await asyncStream.Print();
             await asyncStream.PrintParallel();
             
+        }
+
+        public static async Task IntervalRange()
+        {
+            var indexInterval = new IndexInterval();
+            indexInterval.PrintIndex();
+            indexInterval.PrintIndexInterval();
+
         }
 
 

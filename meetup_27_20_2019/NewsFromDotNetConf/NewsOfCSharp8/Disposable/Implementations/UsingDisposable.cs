@@ -28,6 +28,7 @@ namespace NewsOfCSharp8.Disposable.Implementations
             Console.ForegroundColor = currentForeground;
 
             Console.WriteLine($"After this line the objects dispose");
+
         }
     }
 }

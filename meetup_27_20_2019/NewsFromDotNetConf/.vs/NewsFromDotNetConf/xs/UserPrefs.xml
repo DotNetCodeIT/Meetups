@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="NewsOfCSharp8/IndexIntervals/Implememtations/IndexInterval.cs">
     <Files>
       <File FileName="NewsOfCSharp8/NonNullableObject/Models/NonNullableObj.cs" Line="4" Column="32" />
-      <File FileName="NewsOfCSharp8/NonNullableObject/Implementations/NonNullable.cs" Line="14" Column="27" />
-      <File FileName="NewsOfCSharp8/AsynchronousStreams/Implementations/AsyncStream.cs" Line="57" Column="14" />
-      <File FileName="NewsOfCSharp8/Program.cs" Line="108" Column="1" />
-      <File FileName="NewsOfCSharp8/Disposable/Implementations/UsingDisposable.cs" Line="14" Column="1" />
+      <File FileName="NewsOfCSharp8/NonNullableObject/Implementations/NonNullable.cs" />
+      <File FileName="NewsOfCSharp8/AsynchronousStreams/Implementations/AsyncStream.cs" />
+      <File FileName="NewsOfCSharp8/Program.cs" />
+      <File FileName="NewsOfCSharp8/Disposable/Implementations/UsingDisposable.cs" />
       <File FileName="NewsOfCSharp8/IndexIntervals/Implememtations/IndexInterval.cs" Line="57" Column="41" />
     </Files>
     <Pads>
@@ -27,9 +27,6 @@
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

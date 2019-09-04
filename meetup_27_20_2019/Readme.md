@@ -1,23 +1,23 @@
 # Novità in arrivo dalla .net conf
 
-Ci siamo quasi a fine ottobre, nella [.Net conf del 23-25 ottobre 2019][dot-net-conf] verrà rilasciata in GA la versione finale di __.net code 3__.
+Ci siamo quasi a fine ottobre, nella [.Net conf del 23-25 ottobre 2019][dot-net-conf] verrà rilasciata in GA la versione finale di __.net core 3__.
 
 > Per poter vedere prima degli altri __.net core 3__ e cominciare ad apprezzare i cambiamenti potete scaricare i pacchetti che servono dalla [pagina ufficiale di .net core][dot-netcode-official-download] oppure più semplicemente passare al canale [preview di Visual studio][vs-preview-channel], _se siete utenti mac o linux di Visual  Studio probabilmente sapete già come passare al canale preview senza bisogno di maggiori informazioni_. Al momento in cui scrivo (fine agosto 2019) è stata rilasciata la __preview 8 di .net core 3__, come sempre non ci sono garanzie sul fatto che tutte le caratteristiche presenti nella preview siano poi effettivamente portate in GA ma data la vicinanza del rilascio sono ragionevolmente confidente.
 >
-> Vi segnalo inoltre il modulo __[dot net try][dot-net-try]__ per .net a riga di comando che apre una pagina web in cui scrivere codice in c#, utile sia per testare le novità del linguaggio sia per fare dei piccoli test senza creare decine di progetti inutili sulle nostre macchine.
+> Vi segnalo inoltre il modulo __[dot net try][dot-net-try]__ per .net a riga di comando che apre una pagina web in cui scrivere codice in C#, utile sia per testare le novità del linguaggio sia per fare dei piccoli test senza creare decine di progetti inutili sulle nostre macchine.
 
 Le novità, al livello di linguaggio che saranno introdotte dalla [.Net conf del 23-25 ottobre 2019][dot-net-conf] saranno principalmente su due fronti:
 
-* Novità di c# versione 8
+* Novità di C# versione 8
 * .Net Core Versione 3
 
 Come è ovvio le novità di .net core 3 riguarderanno "solo" l'universo creato da .net core mentre le novità introdotte nel linguaggio si rifletteranno anche (a richiesta) sul "vecchio" framework .net.
 
-## Novità di c# 8
+## Novità di C# 8
 
-Potete trovare tutte le novità su [Novità di c# 8][whats-new-csharp-8] e sulla relativa [repository github][github-try-samples-csharp-8].
+Potete trovare tutte le novità su [Novità di C# 8][whats-new-csharp-8] e sulla relativa [repository github][github-try-samples-csharp-8].
 
-> Al momento in cui scrivo è stata rilasciata la versione 5 in preview di c# 8
+> Al momento in cui scrivo è stata rilasciata la versione 5 in preview di C# 8
 
 ### Membri in sola lettura
 
@@ -25,7 +25,7 @@ E' stato introdotto il modificatore __readonly__ su qualunque membro di una __st
 All'interno di un metodo marcato come readonly non è possibile modificare il contenuto di un field perchè genererebbe un errore di compilazione. Anche il richiamare un metodo non readonly genera un warning.
 Questo rende più difensivo il nostro codice anche se, purtroppo, questa caratteristica è limitata alle sole __struct__ e non alle classi.
 
-```c#
+```C#
     public struct PointNew
     {
         public double X { get; set; }
@@ -52,7 +52,7 @@ Questo rende più difensivo il nostro codice anche se, purtroppo, questa caratte
 
 ### Modifiche alle interfacce
 
-Sono state introdotte varie modifiche alle interfacce in c# 8 in particolare sono stati introdotti i metodi di default nell'interfaccia e, quasi come conseguenza naturale, la possibilità di inserire metodi statici nelle interfacce.
+Sono state introdotte varie modifiche alle interfacce in C# 8 in particolare sono stati introdotti i metodi di default nell'interfaccia e, quasi come conseguenza naturale, la possibilità di inserire metodi statici nelle interfacce.
 
 > A me fa parecchio strano scrivere __definizione di metodi nell'interfaccia__
 
@@ -62,7 +62,7 @@ E' Possibile "definire nell'interfaccia" dei metodi di default. _Questo rende le
 
 > Questa nuova funzionalità è molto utile se si vuole garantire la retro compatibilità con le versioni precedenti di una certa api.
 
-```c#
+```C#
     public interface IDefaultMember
     {
         void DefaultMethod(string str)
@@ -72,9 +72,9 @@ E' Possibile "definire nell'interfaccia" dei metodi di default. _Questo rende le
     }
 ```
 
-Ipotiziamo di aver definito due classi concrete DefaultMember (che non rifefinisce DefaultMethod) e FullImplementation (che al contrario lo ridefinisce)
+Ipotiziamo di aver definito due classi concrete DefaultMember (che non ridefinisce DefaultMethod) e FullImplementation (che al contrario lo ridefinisce)
 
-```c#
+```C#
     // DefaultMember non contiene la ridefinizione di DefaultMethod
     IDefaultMember defaultMemberInterface = new DefaultMember();
 
@@ -92,7 +92,7 @@ Ipotiziamo di aver definito due classi concrete DefaultMember (che non rifefinis
 
 È possibile definire dei membri statici di interfacce che varranno per tutte le classi derivate.
 
-```c#
+```C#
     public interface IStaticMethodInterface
     {
         static void ChangeHello(string hello)
@@ -111,7 +111,7 @@ Ipotiziamo di aver definito due classi concrete DefaultMember (che non rifefinis
 
 Ipotizzando di avere due classi concrete in cui __non__ è stata ridefinita PrintHello()
 
-```c#
+```C#
     IStaticMethodInterface staticDefault = new StaticMethodInterfaceDefault();
     IStaticMethodInterface staticImplementation = new StaticMethodInterfaceOther();
 
@@ -138,11 +138,10 @@ Le espressioni switch sono il naturale proseguimento dei metodi "senza corpo" o 
 
 Questa caratteristica rende notevolmente più snello e leggibile il codice di alcuni tipi di switch.
 
-```c#
+```C#
   private static string PatternMatchingSwitch(LoggingLevel loggingLevel)
     => loggingLevel switch
     {
-
         LoggingLevel.Alert => "Alert",
         LoggingLevel.Warning => "Warning",
         LoggingLevel.Info => "Info",
@@ -157,14 +156,14 @@ Le _switch expression_ risultano, come è ovvio particolarmente comode in tutte 
 
 ### Property patterns
 
-Il property pattern è di gran lunga la feature nuova di c# 8 che preferisco perchè fin da quando è uscita su swift la ho sempre invidiata parecchio.
+Il property pattern è di gran lunga la feature nuova di C# 8 che preferisco perchè fin da quando è uscita su swift la ho sempre invidiata parecchio.
 
-in sostanza questa nuova caratteristica consente (qui scritta in forma compatta) consente di usare una classe in un istruzione di switch e di utilizzare come filtyro contemporaneamente più field della classe.
+in sostanza questa nuova caratteristica consente (qui scritta in forma compatta) consente di usare una classe in un istruzione di switch e di utilizzare come filtro contemporaneamente più field della classe.
 
-L'esempio qui sotto è di facile interpretazione: dato un oggetti City che contiene sia il nome di uno stato che il nome di una città la funzione qui ssotto estrare una label.
-Questo esempio, di scarso significato pratico, serve solo a dimostrare quanto sia facile con c# 8 fare pattern matching su oggetti complessi senza far ricorso a if nei rami dello switch.
+L'esempio qui sotto è di facile interpretazione: dato un oggetti City che contiene sia il nome di uno stato che il nome di una città la funzione qui sotto estrare una label.
+Questo esempio, di scarso significato pratico, serve solo a dimostrare quanto sia facile con C# 8 fare pattern matching su oggetti complessi senza far ricorso a if nei rami dello switch.
 
-```c#
+```C#
     private string GetStateName(City address)
         => address switch
         {
@@ -181,7 +180,7 @@ __Con il _Property pattern_ è possibile usare la forma estesa, e più familiare
 
 Di significato molto simile al property pattern è possibile usare le Tuple come argomento dello switch
 
-```c#
+```C#
     public string RockPaperScissors(string country, string city)
         => (country, city) switch
         {
@@ -197,7 +196,7 @@ Di significato molto simile al property pattern è possibile usare le Tuple come
 E' stato introdotto il Decostruttore per alcuni tipi.
 Il Decostruttore di suo non è molto utile perchè "appiattisce" un oggetto in una lista di parametri.
 
-```c#
+```C#
     public class PointModel
     {
 
@@ -211,7 +210,7 @@ Il Decostruttore di suo non è molto utile perchè "appiattisce" un oggetto in u
     }
 ```
 
-Di suo non è un costrutto molto utile, si puo' già fare con le vecchie versioni di c# usando una nomenclatura "non standard".
+Di suo non è un costrutto molto utile, si puo' già fare con le vecchie versioni di C# usando una nomenclatura "non standard".
 Accoppiato con la clausula _when_ degli switch invece risulta particolarmente efficace.
 
 In questo esempio possiamo vedere quanto sia facile mappare un punto in un piano cartesiano per capire su quale quadrante è  posizionato.
@@ -219,7 +218,7 @@ Il pointModel viene Decostruito ed iserito automaticamente in una tupla, poi vie
 
 > La clausula _when_ più che l'estenzione dello switch possiamo vederlo come un modo per rendere più elegante _else if_
 
-```c#
+```C#
     private string WhenClause() => pointModel switch
     {
         (0, 0) => "origin",
@@ -236,9 +235,9 @@ Potete vedere esempi più avanzatati di pattern matching nell'[Esercitazione: Us
 
 ## Using declaration e struct IDisposable
 
-Con c# 8 le definizioni di using risultano notevolmente semplificate (sopratutto nella lettura)
+Con C# 8 le definizioni di using risultano notevolmente semplificate (sopratutto nella lettura)
 
-```c#
+```C#
     public void Print()
     {
         Console.WriteLine($"pre using declared");
@@ -264,7 +263,7 @@ Ulteriore modifica è la possibilità di dichiarare una struttura IDisposable
 
 Le funzioni locali statiche sono un'estenzione delle funzioni locali già presenti nel linguaggio
 
-```c#
+```C#
     public void Print()
     {
         int a = 5;
@@ -282,11 +281,11 @@ Le funzioni locali statiche sono un'estenzione delle funzioni locali già presen
 
 ## Flussi asincroni
 
-Con c# 8 è stato introdotto il supporto ai flussi asinctroni. In sintesi i flussi asinctroni sono metodi async che tornano un oggetto di tipo __IAsyncEnnumerable< T >__  e che hanno un return espesso con uno __yeld__.
+Con C# 8 è stato introdotto il supporto ai flussi asinctroni. In sintesi i flussi asinctroni sono metodi async che tornano un oggetto di tipo __`IAsyncEnumerable<T>`__  e che hanno un return espesso con uno __yeld__.
 
 Un esempio semplice di flusso asincrono è:
 
-```c#
+```C#
     public static async System.Collections.Generic.IAsyncEnumerable<int> GenerateSequence()
     {
         for (int i = 0; i < 20; i++)
@@ -297,9 +296,9 @@ Un esempio semplice di flusso asincrono è:
     }
 ```
 
-questo flusso asinctrono puo' essere consumato a partire da un nuovo costrutto __await foreach__ che è molto legibile rispetto a soluzioni più barocche.
+questo flusso asincrono puo' essere consumato a partire da un nuovo costrutto __await foreach__ che è molto leggibile rispetto a soluzioni più barocche.
 
-```c#
+```C#
 await foreach (var number in GenerateSequence())
 {
     Console.WriteLine(number);
@@ -309,6 +308,72 @@ await foreach (var number in GenerateSequence())
 L'utilizzo di __await foreach__ è stato creato per consumare i flussi asincroni ed è una soluzione particolarmente efficiente nel caso in cui un __Parallel.foreach__ non sia sufficiente in quanto è necessario garantire l'ordine in cui saranno letti gli elementi della lista.
 
 Dal punto di vista pratico se si dichiara una funzione statica locale allora le variabili dichiarate al di fuori del corpo della funzione statica allora queste variabili risultano inaccessibili.
+
+## Indici ed intervalli
+
+Sono stati introdotti gli oggetti System.Index e System.Range
+
+### Indici
+
+In sostanza usando gli indici ora è possibile accedere direttamente agli ultimi elementi di una collezione senza dover necessariamente fare delle conversioni con Lenght - x.
+
+Semplificando, per accedere agli elementi di una lista in ordine cresciente si possono usare gli indici "normalmente" andando da 0 a Lenght -1.
+
+Sono stati introdotti anche gli indici "inversi" che lavorano sugli ultimi elementi che vanno da ^1 a ^Lenght.
+
+* ^1 viene interpretato come Lenght -1
+* ^2 viene interpretato come Lenght -2
+* ^Lenght viene interpretato come Lenght- Lenght quindi 0
+* ^0 viene interprepato come Lenght - 0 quindi Lenght e quindi genera un'eccezione
+
+nello specifico avendo la sequente lista
+
+```c#
+    string[] number = new string[]
+    {
+                    // index from start    index from end
+        "zero",     // 0                   ^10 (Lenght)
+        "uno",      // 1                   ^9
+        "due",      // 2                   ^8
+        "tre",      // 3                   ^7
+        "quattro",  // 4                   ^6
+        "cinque",   // 5                   ^5
+        "sei",      // 6                   ^4
+        "sette",    // 7                   ^3
+        "otto",     // 8                   ^2
+        "nove"      // 9 (or words.Length) ^1
+    };              // 10(or words.Length) ^0
+
+```
+
+è possibile utilizzare gli indici in questo modo
+
+```c#
+    public void PrintIndex()
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+
+        Console.WriteLine($"The last word is {number[^1]}"); // nove
+        Console.WriteLine($"The first word is {number[^number.Length]}"); //zero
+        //Console.WriteLine($"this is an exception {number[^0]}");
+    }
+```
+
+### Range
+
+E' stato introdotto l'operatore (per le liste) __".."__ che significa "prendi tutti gli indici nell'intervallo.
+
+> 1..4 significa prendi tutti gli elementi della lista da 1 a 4 (escludi lo zero e tutto quello che viene dopo il 4)
+
+è possibile usare questo valore senza il lato sinistro o senza il destro.
+
+quindi:
+
+* [6..] significa prendi gli elementi dal 6 in poi
+* [..6] significa prendi tutti gli eleneti fino al 6
+
+
+
 
 [dot-netcode-official-download]: https://dotnet.microsoft.com/download/dotnet-core/3.0 ".net core official download"
 

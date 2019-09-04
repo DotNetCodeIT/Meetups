@@ -30,7 +30,7 @@ namespace NewsOfCSharp8.IndexIntervals.Implememtations
             Console.ForegroundColor = ConsoleColor.Green;
 
             Console.WriteLine($"The last word is {number[^1]}");
-
+            Console.WriteLine($"The last word is {number[^number.Length]}");
             Console.BackgroundColor = currentBackground;
             Console.ForegroundColor = currentForeground;
         }
