@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Reflection;
+using System.Threading.Tasks;
+using NewsOfCSharp8.AsynchronousStreams.Implementations;
 using NewsOfCSharp8.defaultinterfacesmember.Implementations;
 using NewsOfCSharp8.defaultinterfacesmember.Interfaces;
 using NewsOfCSharp8.Disposable.Implementations;
@@ -20,12 +23,8 @@ namespace NewsOfCSharp8
             //PatternMatching();
             //PositionalPattern();
 
-            UsingDisposable();
-
-            string d = null;
-
-            
-
+            //UsingDisposable();
+            AsyncStream().Wait();
         }
 
         /// <summary>
@@ -120,6 +119,14 @@ namespace NewsOfCSharp8
         {
             var disposable = new UsingDispodable();
             disposable.Print();
+        }
+
+        public static async Task AsyncStream()
+        {
+            var asyncStream = new AsyncStream();
+            await asyncStream.Print();
+            await asyncStream.PrintParallel();
+            
         }
 
 

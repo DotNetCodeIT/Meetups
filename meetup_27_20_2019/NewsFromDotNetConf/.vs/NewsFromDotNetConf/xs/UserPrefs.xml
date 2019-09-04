@@ -1,22 +1,28 @@
 ﻿<Properties StartupConfiguration="{F9E5983A-8147-4973-8DCD-3347167345C3}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NewsOfCSharp8/NonNullableObject/Implementations/NonNullable.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NewsOfCSharp8/IndexIntervals/Implememtations/IndexInterval.cs">
     <Files>
-      <File FileName="NewsOfCSharp8/NonNullableObject/Models/NonNullableObj.cs" Line="10" Column="55" />
-      <File FileName="NewsOfCSharp8/NonNullableObject/Implementations/NonNullable.cs" Line="10" Column="21" />
+      <File FileName="NewsOfCSharp8/NonNullableObject/Models/NonNullableObj.cs" Line="4" Column="32" />
+      <File FileName="NewsOfCSharp8/NonNullableObject/Implementations/NonNullable.cs" Line="14" Column="27" />
+      <File FileName="NewsOfCSharp8/AsynchronousStreams/Implementations/AsyncStream.cs" Line="57" Column="14" />
+      <File FileName="NewsOfCSharp8/Program.cs" Line="108" Column="1" />
+      <File FileName="NewsOfCSharp8/Disposable/Implementations/UsingDisposable.cs" Line="14" Column="1" />
+      <File FileName="NewsOfCSharp8/IndexIntervals/Implememtations/IndexInterval.cs" Line="57" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NewsFromDotNetConf" expanded="True">
             <Node name="NewsOfCSharp8" expanded="True">
-              <Node name="NonNullableObject" expanded="True">
-                <Node name="Implementations" expanded="True">
-                  <Node name="NonNullable.cs" selected="True" />
-                </Node>
-                <Node name="Models" expanded="True" />
-              </Node>
-              <Node name="PositionalPatterns" expanded="True">
+              <Node name="AsynchronousStreams" expanded="True">
                 <Node name="Implementations" expanded="True" />
+              </Node>
+              <Node name="Disposable" expanded="True">
+                <Node name="Implementations" expanded="True" />
+              </Node>
+              <Node name="IndexIntervals" expanded="True">
+                <Node name="Implememtations" expanded="True">
+                  <Node name="IndexInterval.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

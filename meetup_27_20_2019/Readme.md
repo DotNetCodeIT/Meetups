@@ -232,7 +232,9 @@ Il pointModel viene Decostruito ed iserito automaticamente in una tupla, poi vie
     };
 ```
 
-## Using declaration
+Potete vedere esempi più avanzatati di pattern matching nell'[Esercitazione: Uso di funzionalità di criteri di ricerca per estendere i tipi di dati][tutorials-pattern-matching]
+
+## Using declaration e struct IDisposable
 
 Con c# 8 le definizioni di using risultano notevolmente semplificate (sopratutto nella lettura)
 
@@ -256,6 +258,8 @@ La _disposableClass_ viene rilasciata alla fine del metodo.
 
 > Dal punto di vista pratico se la variabile dichiarada nello using puo' vivere fino alla fine del metodo che lo contiene allora non è più necessario inserire il blocco di codice sotto lo using.
 
+Ulteriore modifica è la possibilità di dichiarare una struttura IDisposable
+
 ## Funzioni locali statiche
 
 Le funzioni locali statiche sono un'estenzione delle funzioni locali già presenti nel linguaggio
@@ -276,11 +280,35 @@ Le funzioni locali statiche sono un'estenzione delle funzioni locali già presen
     }
 ```
 
+## Flussi asincroni
+
+Con c# 8 è stato introdotto il supporto ai flussi asinctroni. In sintesi i flussi asinctroni sono metodi async che tornano un oggetto di tipo __IAsyncEnnumerable< T >__  e che hanno un return espesso con uno __yeld__.
+
+Un esempio semplice di flusso asincrono è:
+
+```c#
+    public static async System.Collections.Generic.IAsyncEnumerable<int> GenerateSequence()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            await Task.Delay(100);
+            yield return i;
+        }
+    }
+```
+
+questo flusso asinctrono puo' essere consumato a partire da un nuovo costrutto __await foreach__ che è molto legibile rispetto a soluzioni più barocche.
+
+```c#
+await foreach (var number in GenerateSequence())
+{
+    Console.WriteLine(number);
+}
+```
+
+L'utilizzo di __await foreach__ è stato creato per consumare i flussi asincroni ed è una soluzione particolarmente efficiente nel caso in cui un __Parallel.foreach__ non sia sufficiente in quanto è necessario garantire l'ordine in cui saranno letti gli elementi della lista.
+
 Dal punto di vista pratico se si dichiara una funzione statica locale allora le variabili dichiarate al di fuori del corpo della funzione statica allora queste variabili risultano inaccessibili.
-
-
-
-Potete vedere esempi più avanzatati di pattern matching nell'[Esercitazione: Uso di funzionalità di criteri di ricerca per estendere i tipi di dati][tutorials-pattern-matching]
 
 [dot-netcode-official-download]: https://dotnet.microsoft.com/download/dotnet-core/3.0 ".net core official download"
 
@@ -298,3 +326,5 @@ Potete vedere esempi più avanzatati di pattern matching nell'[Esercitazione: Us
 [expression-body-definition]:https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition "Expression body definition"
 
 [tutorials-pattern-matching]: https://docs.microsoft.com/it-it/dotnet/csharp/tutorials/pattern-matching "Esercitazioni sul Pattern matching"
+
+[generate-consume-asynchronous-stream]: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/generate-consume-asynchronous-stream

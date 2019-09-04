@@ -22,5 +22,9 @@
     <Folder Include="NonNullableObject\" />
     <Folder Include="NonNullableObject\Models\" />
     <Folder Include="NonNullableObject\Implementations\" />
+    <Folder Include="AsynchronousStreams\" />
+    <Folder Include="AsynchronousStreams\Implementations\" />
+    <Folder Include="IndexIntervals\" />
+    <Folder Include="IndexIntervals\Implememtations\" />
   </ItemGroup>
 </Project>
