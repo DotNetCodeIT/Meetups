@@ -6,7 +6,7 @@
       <File FileName="NewsOfCSharp8/AsynchronousStreams/Implementations/AsyncStream.cs" />
       <File FileName="NewsOfCSharp8/Program.cs" />
       <File FileName="NewsOfCSharp8/Disposable/Implementations/UsingDisposable.cs" />
-      <File FileName="NewsOfCSharp8/IndexIntervals/Implememtations/IndexInterval.cs" Line="57" Column="41" />
+      <File FileName="NewsOfCSharp8/IndexIntervals/Implememtations/IndexInterval.cs" Line="25" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,6 +24,9 @@
                   <Node name="IndexInterval.cs" selected="True" />
                 </Node>
               </Node>
+              <Node name="NonNullableObject" expanded="True">
+                <Node name="Models" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -34,7 +37,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/leonardodottavi/sourcetree/github/DotNetCodeMeetups/meetup_27_20_2019/NewsFromDotNetConf/NewsOfCSharp8/IndexIntervals/Implememtations/IndexInterval.cs" relfile="NewsOfCSharp8/IndexIntervals/Implememtations/IndexInterval.cs" line="33" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

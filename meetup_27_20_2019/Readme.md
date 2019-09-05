@@ -372,8 +372,39 @@ quindi:
 * [6..] significa prendi gli elementi dal 6 in poi
 * [..6] significa prendi tutti gli eleneti fino al 6
 
+## Tipi di riferimento nullable
 
+Questa caratteristica deve essere esplicitamente attivata separatamente a partire dal file di progetto
 
+```xml
+    <PropertyGroup>
+    ...
+    <Nullable>enable</Nullable>
+    <LangVersion>8.0</LangVersion>
+    </PropertyGroup>
+```
+
+> in base alla vostra versione di visual studio il tag __Nullable__ potrebbe essere modificato in __NullableReferenceTypes__.
+
+In alternativa è possibile attivare la funzionalita in un singolo blocco di codice
+
+* __#nullable enable__: imposta il contesto dell'annotazione nullable e il contesto dell'avviso nullable su enabled.
+* __#nullable disable__: imposta il contesto dell'annotazione nullable e il contesto dell'avviso nullable su disabled.
+* __#nullable safeonly__: impostare il contesto dell'annotazione nullable su enabled e il contesto dell'avviso su safeonly.
+* __nullable restore__: ripristina le impostazioni di progetto per il contesto dell'annotazione nullable e il contesto dell'avviso nullable.
+* __#pragma warning disable nullable__: impostare il contesto dell'avviso nullable su disabled.
+* __#pragma warning enable nullable__: impostare il contesto dell'avviso nullable su enabled.
+* __#pragma warning restore nullable__: ripristina le impostazioni di progetto per il contesto dell'avviso nullable.
+* __#pragma warning safeonly nullable__: imposta il contesto dell'avviso nullable su safeonly.
+
+In sostanza se la caratteristica viene attivata gli oggetti non dichiarati esplicitamente come __Nullable__, se settati a null, genereranno un warning in compilazione.
+
+```c#
+#nullable enable
+    string s = null; // warning
+    var txt = s.ToString(); // warning
+#nullable restore
+```
 
 [dot-netcode-official-download]: https://dotnet.microsoft.com/download/dotnet-core/3.0 ".net core official download"
 

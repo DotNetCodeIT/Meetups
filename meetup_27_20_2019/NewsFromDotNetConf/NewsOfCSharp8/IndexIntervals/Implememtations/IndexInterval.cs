@@ -6,17 +6,17 @@ namespace NewsOfCSharp8.IndexIntervals.Implememtations
         string[] number = new string[]
         {
                         // index from start    index from end
-            "zero",     // 0                   ^9
-            "uno",      // 1                   ^8
-            "due",      // 2                   ^7
-            "tre",      // 3                   ^6
-            "quattro",  // 4                   ^5
-            "cinque",   // 5                   ^4
-            "sei",      // 6                   ^3
-            "sette",    // 7                   ^2
-            "otto",     // 8                   ^1
-            "nove"      // 9 (or words.Length) ^0
-        };
+            "zero",     // 0                   ^10 (Lenght)
+            "uno",      // 1                   ^9
+            "due",      // 2                   ^8
+            "tre",      // 3                   ^7
+            "quattro",  // 4                   ^6
+            "cinque",   // 5                   ^5
+            "sei",      // 6                   ^4
+            "sette",    // 7                   ^3
+            "otto",     // 8                   ^2
+            "nove"      // 9 (or words.Length) ^1
+        };              // 10(or words.Length) ^0
 
         public IndexInterval()
         {
@@ -29,8 +29,9 @@ namespace NewsOfCSharp8.IndexIntervals.Implememtations
 
             Console.ForegroundColor = ConsoleColor.Green;
 
-            Console.WriteLine($"The last word is {number[^1]}");
-            Console.WriteLine($"The last word is {number[^number.Length]}");
+            Console.WriteLine($"The last word is {number[^1]}"); // nove
+            Console.WriteLine($"The first word is {number[^number.Length]}"); //zero
+            //Console.WriteLine($"this is an exception {number[^0]}");
             Console.BackgroundColor = currentBackground;
             Console.ForegroundColor = currentForeground;
         }
