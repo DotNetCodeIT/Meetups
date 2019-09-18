@@ -17,7 +17,7 @@ Come è ovvio le novità di .net core 3 riguarderanno "solo" l'universo creato d
 
 Potete trovare tutte le novità su [Novità di C# 8][whats-new-csharp-8] e sulla relativa [repository github][github-try-samples-csharp-8].
 
-> Al momento in cui scrivo è stata rilasciata la versione 5 in preview di C# 8
+> Al momento in cui scrivo è stata rilasciata la RC1 di C# 8
 
 ### Membri in sola lettura
 
