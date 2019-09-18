@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsOfCSharp8", "NewsOfCSharp8\NewsOfCSharp8.csproj", "{1D3541F0-CFB3-4E60-8ECD-88ED5832A345}"
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "NewsOfCSharp8", "NewsOfCSharp8\NewsOfCSharp8.csproj", "{F9E5983A-8147-4973-8DCD-3347167345C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +9,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1D3541F0-CFB3-4E60-8ECD-88ED5832A345}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D3541F0-CFB3-4E60-8ECD-88ED5832A345}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D3541F0-CFB3-4E60-8ECD-88ED5832A345}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D3541F0-CFB3-4E60-8ECD-88ED5832A345}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9E5983A-8147-4973-8DCD-3347167345C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E5983A-8147-4973-8DCD-3347167345C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E5983A-8147-4973-8DCD-3347167345C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E5983A-8147-4973-8DCD-3347167345C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

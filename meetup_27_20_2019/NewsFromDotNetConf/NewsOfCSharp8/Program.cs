@@ -1,7 +1,15 @@
 ﻿using System;
+using System.Reflection;
+using System.Threading.Tasks;
+using NewsOfCSharp8.AsynchronousStreams.Implementations;
 using NewsOfCSharp8.defaultinterfacesmember.Implementations;
 using NewsOfCSharp8.defaultinterfacesmember.Interfaces;
+using NewsOfCSharp8.Disposable.Implementations;
+using NewsOfCSharp8.IndexIntervals.Implememtations;
+using NewsOfCSharp8.patternmatching.Implementations;
 using NewsOfCSharp8.patternmatching.Models;
+using NewsOfCSharp8.PositionalPatterns.Implementations;
+using NewsOfCSharp8.PositionalPatterns.Model;
 using NewsOfCSharp8.readolymember.Models;
 
 namespace NewsOfCSharp8
@@ -12,7 +20,13 @@ namespace NewsOfCSharp8
         {
             //ReadOnlyMember();
             //DefaultMembersInterfaces();
-            StaticMembersInterfaces();
+            //StaticMembersInterfaces();
+            //PatternMatching();
+            //PositionalPattern();
+
+            //UsingDisposable();
+            //AsyncStream().Wait();
+            IntervalRange();
         }
 
         /// <summary>
@@ -87,34 +101,44 @@ namespace NewsOfCSharp8
 
 
 
-        private static string PatternMatchingSwitch(LoggingLevel loggingLevel)
-            => loggingLevel switch
-            {
-
-                LoggingLevel.Alert => "Alert",
-                LoggingLevel.Warning => "Warning",
-                LoggingLevel.Info => "Info",
-                LoggingLevel.Debug => "Debug",
-                _ => "Other"
-            };
-
-
-        private static string GetStateName(Address address)
-            => address switch
-            {
-                { State: "IT", City: "Rome" } => "Italia"
-            };
-
-        private static string GetStateNameEx(Address address)
+        private static void PatternMatching()
         {
-            switch (address)
-            {
-                case { State: "IT", City: "Rome" }:
-                    return "Italia;";
-                default:
-                    return "default";
-            }
+
+            var patternMatching = new PatternMatching();
+            patternMatching.PrintPatternMatching();
         }
+
+        private static void PositionalPattern()
+        {
+
+            var positionalPattern = new PositionalPattern(new PointModel(9,42));
+            positionalPattern.PrintDeconstructor();
+
+            positionalPattern.PrintWhenClause();
+        }
+
+        public static void UsingDisposable()
+        {
+            var disposable = new UsingDispodable();
+            disposable.Print();
+        }
+
+        public static async Task AsyncStream()
+        {
+            var asyncStream = new AsyncStream();
+            await asyncStream.Print();
+            await asyncStream.PrintParallel();
+            
+        }
+
+        public static async Task IntervalRange()
+        {
+            var indexInterval = new IndexInterval();
+            indexInterval.PrintIndex();
+            indexInterval.PrintIndexInterval();
+
+        }
+
 
 
 
