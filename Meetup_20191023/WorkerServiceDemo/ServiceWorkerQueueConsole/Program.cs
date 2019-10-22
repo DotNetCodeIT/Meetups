@@ -39,7 +39,7 @@ namespace ServiceWorkerQueueConsole
         }
 
 
-        private static string queueConnectionString = "DefaultEndpointsProtocol=https;AccountName=netcore3;AccountKey=d20jLAIbYLz/+tFcyGPokugBcZXAaY5mIo9KdomF9j/hJJzdZ9d7D4GYRcTlXkfduGYlMa/adrCyAZLZOZJq/Q==;EndpointSuffix=core.windows.net";
+        private static string queueConnectionString = "DefaultEndpointsProtocol=https;AccountName=netcore3;EndpointSuffix=core.windows.net";
         private static void btnSend(string text)
         {
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(queueConnectionString);
