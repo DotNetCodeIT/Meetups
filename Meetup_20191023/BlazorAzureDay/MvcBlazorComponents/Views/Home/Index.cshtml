@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<Speakers>
+    
+    @(await Html.RenderComponentAsync<Speakers>(RenderMode.ServerPrerendered, new { JsonUrl="https://sessionize.com/api/v2/wanb4oy8/view/Speakers"}))
+</Speakers>

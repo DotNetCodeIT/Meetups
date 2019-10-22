@@ -1,0 +1,52 @@
+﻿@using BlazorMaterial.Models
+@using BlazorMaterial.Cards
+
+@inject HttpClient Http
+<h3>Speakers</h3>
+@JsonUrl
+<div class="row">
+
+
+    @if (speakers != null)
+    {
+        @foreach (Speaker speaker in speakers)
+        {
+    <div class="col-md-3">
+        <RegularCard Title="@speaker.fullName" SubTitle="@speaker.tagLine" ImageUrl="@speaker.profilePicture" >
+          
+        </RegularCard>
+    </div>
+        }
+
+    }
+</div>
+@Test
+
+@code {
+
+        [Parameter]
+        public string JsonUrl { get; set; } = "sample-data/speakers.json";//"https://sessionize.com/api/v2/wanb4oy8/view/Speakers";
+
+        private Speaker[] speakers;
+
+        [Parameter]
+        public string Test { get; set; }
+
+
+        
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            speakers = await Http.GetJsonAsync<Speaker[]>(JsonUrl);
+
+        }
+        catch (Exception ex)
+        {
+            Test = ex.Message;
+            Console.WriteLine(ex.Message);
+        }
+    }
+
+
+}
