@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.WindowsAzure.Storage;
@@ -13,13 +14,14 @@ namespace WorkerService
     public class Worker : BackgroundService
     {
         private readonly ILogger<Worker> _logger;
-
-        public Worker(ILogger<Worker> logger)
+        
+        public Worker(ILogger<Worker> logger,IConfiguration configuration)
         {
             _logger = logger;
+            queueConnectionString = configuration["Queue:ConnectionString"];
         }
 
-        private string queueConnectionString = "DefaultEndpointsProtocol=https;AccountName=netcore3;AccountKey=d20jLAIbYLz/+tFcyGPokugBcZXAaY5mIo9KdomF9j/hJJzdZ9d7D4GYRcTlXkfduGYlMa/adrCyAZLZOZJq/Q==;EndpointSuffix=core.windows.net";
+        private string queueConnectionString = "";
 
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)

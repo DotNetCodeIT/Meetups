@@ -1,4 +1,5 @@
-﻿using Microsoft.WindowsAzure.Storage;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Queue;
 using System;
 
@@ -6,8 +7,15 @@ namespace ServiceWorkerQueueConsole
 {
     class Program
     {
+  
+      
+
+        private static string queueConnectionString = "";
+
+
         static void Main(string[] args)
         {
+          
 
             Boolean isexit = true;
             while (isexit)
@@ -39,7 +47,6 @@ namespace ServiceWorkerQueueConsole
         }
 
 
-        private static string queueConnectionString = "DefaultEndpointsProtocol=https;AccountName=netcore3;AccountKey=d20jLAIbYLz/+tFcyGPokugBcZXAaY5mIo9KdomF9j/hJJzdZ9d7D4GYRcTlXkfduGYlMa/adrCyAZLZOZJq/Q==;EndpointSuffix=core.windows.net";
         private static void btnSend(string text)
         {
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(queueConnectionString);
