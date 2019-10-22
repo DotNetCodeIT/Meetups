@@ -27,7 +27,7 @@
         <a type="button" class="btn-floating btn-small btn-tw"><i class="fab fa-twitter"></i></a>
         <!-- Google + -->
         <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fab fa-dribbble"></i></a>
-        <button @onclick="netAlert(Title)">JS Test</button>
+        @*<button @onclick="netAlert(Title)">JS Test</button>*@
     </div>
 
 </div>
@@ -51,8 +51,8 @@
     [Parameter]
     public RenderFragment ChildContent { get; set; }
 
-    public EventCallback netAlert(string text)
-    {
-        return JSRuntime.InvokeVoidAsync("alert('Test')");
-    }
+    //public EventCallback netAlert(string text)
+    //{
+    //    return JSRuntime.InvokeVoidAsync("alert('Test')");
+    //}
 }

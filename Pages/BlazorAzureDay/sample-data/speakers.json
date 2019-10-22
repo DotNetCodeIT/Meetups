@@ -1,0 +1,833 @@
+﻿[
+  {
+    "id": "61e3308c-04ec-4a29-9b82-0bb427c6bceb",
+    "firstName": "Alberto",
+    "lastName": "Acerbis",
+    "fullName": "Alberto Acerbis",
+    "bio": "Sono fondamentalmente un dev appasionato.\r\nSono socio fondatore di 4Solid, una società che cerca di sviluppare codice divertendosi e ovviamente, commettendo errori.\r\nMi piace restare fuori dalla mia Confort-Zone in modo da avere continuamente stimoli nel proseguire questo lavoro ... o passione.\r\nQuando non scrivo codice amo perdermi fra le montagne, soprattutto se sono isolate e imbiancate. Amo tracciare linee con i miei sci dove ancora non è passato nessuno.",
+    "tagLine": "Miracles sometimes occur, but one has to work terribly for them (C.Weizamann)",
+    "profilePicture": "https://sessionize.com/image?f=2f2cdcf8486b6c6300a656e6ae92f7c3,400,400,True,False,8c-04ec-4a29-9b82-0bb427c6bceb.a3d5f912-96d4-4ee7-9d0a-811b2fedb0cf.jpg",
+    "sessions": [
+      {
+        "id": 149276,
+        "name": "Embracing Failure"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/aacerbis",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/aacerbis/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "2a1e7117-67b2-4b44-b490-2697d9e0fc20",
+    "firstName": "Alessandro",
+    "lastName": "Scardova",
+    "fullName": "Alessandro Scardova",
+    "bio": "Sviluppatore emiliano di applicazioni enterprise basate sul .NET Framework, si occupa principalmente dell'infrasttuttura cloud delle applicazioni Web in ambito Microsoft Azure",
+    "tagLine": "Mahiz Srl",
+    "profilePicture": "https://sessionize.com/image?f=0b868f5005908975d072aa95d5c23b33,400,400,True,False,17-67b2-4b44-b490-2697d9e0fc20.a93901a0-ed95-4c03-ba1e-5f0ed15ab725.jpg",
+    "sessions": [
+      {
+        "id": 147542,
+        "name": "Azure Application Insights Overview"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/AlexBream",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ascardova/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "eeba619d-5516-42f3-a342-19b70ae7d75d",
+    "firstName": "Alessio",
+    "lastName": "Iafrate",
+    "fullName": "Alessio Iafrate",
+    "bio": "Appassionato di tutto ciò che è tecnologico e programmatore da 15 anni. \r\nInizia in ambito Java enterprise per approdare al mondo .NET già dalla versione 1.1 del framework.\r\nLavora come freelance per varie aziende tra abruzzo e lazio soprattutto in ambito web ma ha una passione smodata per il mondo mobile, soprattutto in ambito smartphone.\r\nFondatore della community Dotnet Abruzzo  in cui veste i panni di speaker ed organizzatore di eventi.\r\nMVP dal 2016 nella categoria Windows Development",
+    "tagLine": "Microsoft MVP, Freelance developer",
+    "profilePicture": "https://sessionize.com/image?f=bdcdc9e78c704b1c5b37a8afc226ca1c,400,400,True,False,9d-5516-42f3-a342-19b70ae7d75d.7d93fadc-d3ba-4391-a7b8-74aaaf2c5648.jpg",
+    "sessions": [
+      {
+        "id": 137795,
+        "name": "Realtà aumentata ed azure, un binomio imbattibile"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/alessioiafrate",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/alessio-iafrate/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "6c25788e-d4e1-40b0-ad03-05d7ec5331a4",
+    "firstName": "Antonella",
+    "lastName": "Blasetti",
+    "fullName": "Antonella Blasetti",
+    "bio": "University Master Degree in Statistics I worked as Application and System Engineer in the International SW Development Lab of IBM in Italy. I was Professor of Relational Database Design at the University La Sapienza of Rome. I am founder and co-owner of Information Design, an IT Consulting Company. I worked as temporary manager (IT and Finance) in the Daimler (Mercedes) Outsourcing Company; I took part in international task forces for defining valuation and transfer strategies of all the assets of big data centers (IBM Mainframes). I have been working in International Software Projects and I have a Big experience in Databases and Data/System Integration. I am a Google Expert Cloud  and I got several certifications: AWS Solutions Architect Associate GOOGLE CLOUD Associate Engineer GOOGLE CLOUD Professional Data Engineer GOOGLE CLOUD Professional Cloud Architect ORACLE Database Administrator Neo4j Certification. I am passionate about Machine Learning and Big Data. Since 2011, I have been Google Developer Group GDG ROMA Founder and Leader. I have always supervised the technical aspects of all activities. We organize any kind of events, from the big ones (600 people) to Labs and long-term training programs. I like to enlist special kinds of events: Several Treasure Hunts with Android apps A GDG rail car Lab traveling to Droidcon A Cloud event for about 350 people in the Mercedes Benz Congress Center with the chance to take a ride with fast and powerful Mercedes cars An I/O extended with kids playing tech in the garden and the training activities: Android Web mobile Development ML Angular Cloud DialogFlow/Action on Google. I organize very active sessions, without long boring lectures. With our help, many people managed to improve their professional life, to get a better job, and to gain more self-confidence and motivation. I am really proud of it and I am grateful to Google for giving me this opportunity.",
+    "tagLine": "IT Manager Information Design - Google Developer Expert Cloud - AWS e GCP Cloud Certified - Leader Google Developer Group Roma",
+    "profilePicture": "https://sessionize.com/image?f=5fde3b9d25729a7282f2ef3cf32aa4ac,400,400,True,False,8e-d4e1-40b0-ad03-05d7ec5331a4.a09e8b8e-4b4d-4f56-8fa5-19d4874fc65d.jpg",
+    "sessions": [
+      {
+        "id": 153994,
+        "name": "Workshop: Serverless: Azure WITH the rest of the world"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/antonellablasetti/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "aa8ef66c-9411-4a14-86a6-5fd32f972160",
+    "firstName": "Antonio Turibbio",
+    "lastName": "Liccardi",
+    "fullName": "Antonio Turibbio Liccardi",
+    "bio": "Antonio Liccardi is a book author, a consultant at Blexin s.r.l., and a specialized trainer on mobile development and application lifecycle management. Thanks to his love for sharing, he co-founded “DotNetCampania” (an Italian .NET community), with which he helps others to improve their knowledge about .NET Ecosystem and more in general about coding.\r\nAntonio is a frequent speaker at local and Italian conferences, and he has been awarded by Microsoft as MVP for Visual Studio Developer Technologies since 2015. \r\nYou can find him on Twitter as @turibbio",
+    "tagLine": "Releasing software since 2014 @ Blexin s.r.l.",
+    "profilePicture": "https://sessionize.com/image?f=3e45ba98581d1fe6e0f01b5d2b570ae3,400,400,True,False,6c-9411-4a14-86a6-5fd32f972160.ab1b6133-c415-44d1-aa08-9766dba01bb8.png",
+    "sessions": [
+      {
+        "id": 141866,
+        "name": "Building serverless microservices in Azure"
+      },
+      {
+        "id": 148015,
+        "name": "Workshop: Asp.Net Core e Angular in produzione con Docker e Kubernetes"
+      },
+      {
+        "id": 156071,
+        "name": "Workshop: Asp.Net Core e Angular in produzione con Docker e Kubernetes"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/turibbio",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://it.linkedin.com/in/antonio-liccardi-57389a22",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "d8bc3565-635f-44e2-99c5-52ef433c6853",
+    "firstName": "Danilo",
+    "lastName": "Dominici",
+    "fullName": "Danilo Dominici",
+    "bio": "Danilo Dominici è un consulente freelance, trainer, speaker ed autore specializzato su SQL Server sin dalla versione 6.5. Dal 2011 collabora con SolidQ, dove si occupa principalmente di progettazione, implementazione ed ottimizzazione architetturale, monitoring, performance tuning di soluzioni basate su SQL Server, formazione.  Microsoft Certified Trainer dal 2000 e SQL Server MVP dal 2014, è anche co-leader del PASS Global Italian Virtual Chapter, lo user group \"virtuale\" in lingua italiana dedicato a SQL Server.",
+    "tagLine": "Data Platform MVP, Powershell lover",
+    "profilePicture": "https://sessionize.com/image?f=a6931f9416db70d40c8729f196909ce3,400,400,True,False,03ec4340-8532-4359-be7c-1bb1798bde74.jpg",
+    "sessions": [
+      {
+        "id": 142487,
+        "name": "Utilizzare Azure Kubernetes Service per i nostri database Sql Server"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/danilo_dominici",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/danilodominici",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "478eb99d-9195-4765-8f6f-febcad2d85cf",
+    "firstName": "Davide",
+    "lastName": "Zordan",
+    "fullName": "Davide Zordan",
+    "bio": "Davide is a software engineer living in London specialising in client/mobile development and Mixed Reality. He likes sharing his experiences with the community writing on his blog https://davide.dev and participating in Open-Source projects.",
+    "tagLine": "Senior Software Engineer | AR, VR, Mixed Reality Developer",
+    "profilePicture": "https://sessionize.com/image?f=91871ce49c09824be4dc49e800ad7a4d,400,400,True,False,52249a92-1a82-4312-9ad1-660e7e480f78.jpg",
+    "sessions": [
+      {
+        "id": 151350,
+        "name": "Getting Started with Unity, AR/VR and Azure Cognitive Services for the .NET Developer"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/DavideZordan",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/davidezordan/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "e2ad7c1f-be54-4582-8cc3-f866ad5f76f3",
+    "firstName": "Emanuele",
+    "lastName": "Garofalo",
+    "fullName": "Emanuele Garofalo",
+    "bio": "Emanuele Garofalo è un solution architect freelance focalizzato principalmente su tecnologie Microsoft. \r\nQuotidianamente aiuta i suoi clienti sin dalla fase di modellazione dei processi di business, accompagnandoli attraverso lo sviluppo fino ad arrivare al deployment, per il quale si è particolarmente specializzato sull’adozione di Azure.\r\nQuando non è impegnato a stare al computer, ama leggere fumetti, giocare di ruolo e fare sport",
+    "tagLine": "solution architect freelance",
+    "profilePicture": "https://sessionize.com/image?f=0b4fda3152284a131e1c11b93acdbe70,400,400,True,False,1f-be54-4582-8cc3-f866ad5f76f3.8c081dd5-f645-478d-a2e8-638cc243808c.JPG",
+    "sessions": [
+      {
+        "id": 148700,
+        "name": "API Management: security, gestione delle policy e monitoraggio"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/EmaGar83",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/emanuele-garofalo-ba12ab31/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "22dbe991-54f2-4ae2-a745-ab14fe413889",
+    "firstName": "Enrico",
+    "lastName": "Risa",
+    "fullName": "Enrico Risa",
+    "bio": "Enrico has been playing with computers since high school, mostly gaming and desktop assembling. He discovered the joy of coding while studying computer science at the University. Currently works with Java and JavaScript at OrientDB as Software Engineer, where his passion for graphs, distributed systems, data visualization and front-end grew. In his coding spare time he enjoys writing Elixir and Rust\r\nWhen he's not coding he loves making pasta and going\r\n",
+    "tagLine": "Software Engineer at OrientDB",
+    "profilePicture": "https://sessionize.com/image?f=dabb72fa1f51245430534411ca1eccd8,400,400,True,False,91-54f2-4ae2-a745-ab14fe413889.2d56d676-979f-44d9-a138-33a8c0ca2128.jpeg",
+    "sessions": [
+      {
+        "id": 154868,
+        "name": "Workshop Gremlin 101: cosa è la CosmosDB API Graph e come usarla"
+      },
+      {
+        "id": 156070,
+        "name": "Workshop Gremlin 101: cosa è la CosmosDB API Graph e come usarla"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/wolf4ood",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/enrico-risa-5b462826/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "57b9c6e7-df68-4846-963f-a93ad8cfd428",
+    "firstName": "Fabrizio",
+    "lastName": "Morando",
+    "fullName": "Fabrizio Morando",
+    "bio": "Agile coach - DevOps \\ ALM practitioner. I’m responsible to deliver and manage application development support contracts in Microsoft Italia subsidiary.\r\n\r\nI'm enthusiastic and passionate in technologies and emerging trends about Application Lifecycle processes and tools, Quality Driven Development, Cloud architectures, Microservices Approach.\r\n\r\nConstantly focused on how DevOps discusses today's successful business strategies evolution around continuous improvement practices, and how implementing a DevOps environment can achieve this goal. Particularly involved on how cultural changes associated with implementing DevOps are discussed, including challenges in this area.\r\n\r\nI can define my strenght points in deep strategic thinking and strong leadership attitude. Excellent communication and presentational skills.",
+    "tagLine": "Application Development Manager - Microsoft Premier Services",
+    "profilePicture": "https://sessionize.com/image?f=0230d3c14db062848e78751bfcc8575d,400,400,True,False,ddde75d5-6cc0-4b32-978d-0b59ba98cf14.jpg",
+    "sessions": [
+      {
+        "id": 139069,
+        "name": "Deconstructing Kubernetes using AKS"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/pocaccia",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/fabrizio-morando-33936b2b/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "56012b8c-9c65-41ca-a518-5ee93a017c52",
+    "firstName": "Fausto",
+    "lastName": "Pasqualetti",
+    "fullName": "Fausto Pasqualetti",
+    "bio": "Fausto Pasqualetti is a Senior Manager and Enterprise Architect with a worldwide experience since more than 16 years and he is the Head of Cloud & Edge for Capgemini Italy He took his Master Degree in Aerospace Engineering in 2000 at Rome University La Sapienza . He has got Master Architect via Open Group Certification . Fausto during his career always worked in strategic and highly complex programs and opportunities in different roles such as Enterprise Architect, Chief Technologist, Solution Executive and Chief Architect covering a critical success factor role as key team member . Fausto is based in Rome, Italy",
+    "tagLine": "#devops #ops #",
+    "profilePicture": "https://sessionize.com/image?f=a174909178db14aa545cd0e4202fbda6,400,400,True,False,8c-9c65-41ca-a518-5ee93a017c52.56024faa-e9a5-4b11-a589-a39e409e141f.png",
+    "sessions": [
+      {
+        "id": 147285,
+        "name": "Cloud Journey - FastTrack for Azure"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/faustopasq",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/faustopasqualetti/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "991049f3-a4aa-435e-a69a-b078b75f9d46",
+    "firstName": "Federico",
+    "lastName": "Luciano",
+    "fullName": "Federico Luciano",
+    "bio": "DevOps architect con 10 anni di esperienza nello sviluppo software, Federico progetta quotidianamente sistemi resilienti ed ultrascalabili.\r\nEsperto conoscitore di Scrum, applica olisticamente principi agili al fine di promuovere la comunicazione e migliorare la produttività del team.\r\nFederico è un convinto sostenitore dell’importanza della qualità dello sviluppo software e della trasparenza all’interno del team al fine di individuare costantemente margini di miglioramento e tradurli in risultati tangibili.\r\n",
+    "tagLine": "Microsoft Premier Field Engineer",
+    "profilePicture": "https://sessionize.com/image?f=d5f719a76769f96889b3761527994edc,400,400,True,False,f3-a4aa-435e-a69a-b078b75f9d46.96ee9ff1-9efe-467b-9219-915d7e4db399.PNG",
+    "sessions": [
+      {
+        "id": 139069,
+        "name": "Deconstructing Kubernetes using AKS"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "ff9c5d22-cc05-4178-ac4f-bc184fb6e12c",
+    "firstName": "Giancarlo",
+    "lastName": "Lelli",
+    "fullName": "Giancarlo Lelli",
+    "bio": "Giancarlo lavora per Avanade Italy nell’ Italy Delivery Center a Cagliari. In qualità di Technical Lead ha il compito di supervisionare le attività di sviluppo, stimare e definire le attività tecniche necessarie per portare avanti i progetti in cui è coinvolto. Essendo il suo team parte della practice CRM, la piattaforma Microsoft Dynamics è il suo pane quotidiano. Giancarlo partecipa abitualmente in veste di speaker a numerose conferenze sul territorio nazionale parlando principalmente di tecnologie collegate alla Windows Platform e al mondo del Cloud. E’ Lead e fondatore di Italian Developer Connection, uno user group dedicato alle tecnologie Microsoft attivo nel sud Italia. Dal 2015 al 2018 è stato Microsoft MVP per la categoria Windows Development ed è certificato MCSE Cloud Platform & Infrastructure.",
+    "tagLine": "Senior Software Development & DevOps Engineer",
+    "profilePicture": "https://sessionize.com/image?f=af0246255977aafa484b4473d6de1e05,400,400,True,False,a0acffbc-4424-4242-816f-80ce49a5200c.jpg",
+    "sessions": [
+      {
+        "id": 155552,
+        "name": "Continuous Delivery on Azure Red Hat OpenShift Managed"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/itsonlyGianca",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://it.linkedin.com/in/giancarlolelli",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "e2cbc32c-a61c-4b2b-82fe-a8ce57f77e7b",
+    "firstName": "Giorgio",
+    "lastName": "Lasala",
+    "fullName": "Giorgio Lasala",
+    "bio": "Lavoro in Engineering come Solution Architect su differenti tipologie di progetti, da architetture cloud a complessi sistemi enterprise on-premise.\r\nRecentemente sto approfondendo i tanti aspetti che ruotano intorno alla metodologia DevOps con particolare attenzione al mondo Microsoft ",
+    "tagLine": "Engineering Ingegneria Informatica - Solution Architect",
+    "profilePicture": "https://sessionize.com/image?f=001ab8fb33b740cc2e9c0e1fb6660aa5,400,400,True,False,2c-a61c-4b2b-82fe-a8ce57f77e7b.0da199c0-2dea-4de0-a9cf-77664e9b0ab1.jpg",
+    "sessions": [
+      {
+        "id": 156346,
+        "name": "Effettuare il provisioning su Azure utilizzando Terraform e Azure DevOps "
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/giorgiolasala/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "4f9110a5-1657-4f34-bcc6-a8dc9467d6ce",
+    "firstName": "Lorenzo",
+    "lastName": "Barbieri",
+    "fullName": "Lorenzo Barbieri",
+    "bio": "Increasing partners ROI on cloud investments with the right architecture is one my objectives as a Cloud Solution Architect working for Microsoft. Improving people’s public speaking skills is one of my personal goals.\r\nI'm specialized in Cloud Application Development, both Azure and Office 365, Windows and cross-platform applications, Visual Studio, ALM and DevOps, and I like to talk with people and communities about technology, food, and funny things.\r\nI'm a speaker, a trainer, and a public speaking coach. I've helped many students, devs, other professionals and many colleagues, improving their stage presence, to deliver exceptional presentations.\r\nI work for Microsoft Western Europe, in the One Commercial Partner SI Alps division, helping partners (System Integrators), developers, communities, and customers in Italy, Austria and Switzerland, supporting software development on Microsoft and OSS technologies.\r\nI've managed teams of more than twenty people, and now I enjoy when I can lead virtual teams to drive specific results.\r\nI'm a Microsoft Certified Trainer since 2000 and a former Microsoft MVP for ALM, DevOps, and Virtual Machines.\r\nI write articles for Italian IT magazines and I speak at conferences in Italy and Europe, and I'm currently trying to finish my first book.\r\n\r\nSpecialties: Cloud Architectures, Training, Software Development, Problem Solving, Team Development, Coaching ",
+    "tagLine": "Normal People Bore Me! Cloud Wizard @ Microsoft, Solutions Architect, Speaker, Mentor, Would-Be Book Author. Here & Now.",
+    "profilePicture": "https://sessionize.com/image?f=21dc9e460722189624fc28b59bdcdc32,400,400,True,False,a5-1657-4f34-bcc6-a8dc9467d6ce.e435a090-959e-4c85-a13f-7c28302206af.jpg",
+    "sessions": [
+      {
+        "id": 147949,
+        "name": "From Developer to Cloud Architect"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "http://twitter.com/_geniodelmale",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/geniodelmale/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "1157f1ea-04ff-4898-96ea-7181301e3b6f",
+    "firstName": "Marco",
+    "lastName": "Caruso",
+    "fullName": "Marco Caruso",
+    "bio": "20 anni di esperienza sul monto IT, ricopro il ruolo di Solution/Enterprise architect da più di 10 anni prettamente sulla piattaforma Microsoft. Appassionato di tecnologia, il Cloud il mio pane quotidiano",
+    "tagLine": "Jakala, Enterprise Architect",
+    "profilePicture": "https://sessionize.com/image?f=83e3319c15f080d9be27628c2d46166c,400,400,True,False,ea-04ff-4898-96ea-7181301e3b6f.0ce9f762-8540-4243-9e28-9dbd531f8d8b.jpg",
+    "sessions": [
+      {
+        "id": 136182,
+        "name": "Ingestion nel datalake passando tramite API Managament senza utilizzo di codice"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/MarcoCaruso79",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/carusomarco",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "1de06402-1de5-4833-8d43-fda8049fc72b",
+    "firstName": "Marco",
+    "lastName": "Dal Pino",
+    "fullName": "Marco Dal Pino",
+    "bio": "Marco Dal Pino has been working in the IT for more than 25 years as a Freelance Consultant working on .NET platform. \r\nHe develops Mobile and Embedded Application for retail and enterprise Sector. He is also involved in developing Windows Phone and Windows 10 application for 3rd party company. \r\nHe is a Trainer and a Speaker in the main technical conference.\r\nHe is part of the staff of DotNetToscana a community focused on Microsoft technologies.\r\nIn 2013 Microsoft recognize him the title of Microsoft MVP .\r\nSince May 2014 he has been an Intel Software Innovator for Realsense and IoT technologies.\r\nIn 2015 Intel has recognized him the title of Intel Black Belt Software Developer.\r\nIn 2017 he joined Projest SPA as Enterprise IT Manager",
+    "tagLine": "Microsoft MVP, Speaker, Enterprise IT Manager",
+    "profilePicture": "https://sessionize.com/image?f=f1eef3576399230d7ef9ef69887b3af8,400,400,True,False,02-1de5-4833-8d43-fda8049fc72b.7adf1926-ee8a-42de-b82a-f42ce8d15148.png",
+    "sessions": [
+      {
+        "id": 138635,
+        "name": "Build an Azure connected IoT device in 45 minutes (or less)"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/marcodalpino",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/marcodalpino/?locale=en_US",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "73b4347e-caf5-4f8a-b7c5-168ee1c12d87",
+    "firstName": "Marco",
+    "lastName": "Liberati",
+    "fullName": "Marco Liberati",
+    "bio": "Living in the JS/TS world, dealing with connected data.",
+    "tagLine": "Connecting the dots of data.",
+    "profilePicture": "https://sessionize.com/image?f=cf88ad311de8d97bdb1cd3a9340c9d6d,400,400,True,False,6eb76524-3c80-4d15-8475-2587555987b0.jpg",
+    "sessions": [
+      {
+        "id": 154868,
+        "name": "Workshop Gremlin 101: cosa è la CosmosDB API Graph e come usarla"
+      },
+      {
+        "id": 156070,
+        "name": "Workshop Gremlin 101: cosa è la CosmosDB API Graph e come usarla"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/dej611",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/dej611/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "321c2834-da3a-480c-ac66-e9cc80a6df65",
+    "firstName": "Marco",
+    "lastName": "Obinu",
+    "fullName": "Marco Obinu",
+    "bio": "Curious by nature, talkative geek which is able to speak in front of a public or a camera, in love with technology, especially SQL Server and Azure. I'd like to understand how things work and to solve problems by myself, during work as well as in my many hobbies.",
+    "tagLine": "Advisory Engineer @ Softjam S.p.A.",
+    "profilePicture": "https://sessionize.com/image?f=13ed36bf730da2f4fc83a19e663473df,400,400,True,False,9da94170-8349-46c9-937c-237d3620626c.jpg",
+    "sessions": [
+      {
+        "id": 140184,
+        "name": "Workshop: Automatizzare la creazione di risorse con ARM Template e Powershell"
+      },
+      {
+        "id": 140183,
+        "name": "Reagire agli eventi generati dalla propria infrastruttura con Azure Monitor"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/OmegaMadLab",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/marco-obinu-omegamadlab/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "2e0557a3-9465-4a81-88fd-29fa19b26168",
+    "firstName": "Marco",
+    "lastName": "Zamana",
+    "fullName": "Marco Zamana",
+    "bio": "I am a Microsoft AI MVP and Senior Developer and co-founder of CloudGen Verona, a italian community based in Verona, that makes the Azure and .NET world its main subject.\r\nMy passion for the code allowed me to become Microsoft Certified Solutions Developer.\r\nI love the AI ​​world, especially Machine Learning and Azure Bot Service.",
+    "tagLine": "Senior consultant developer .NET - Microsoft AI MVP ",
+    "profilePicture": "https://sessionize.com/image?f=35390c016b289169d343d58c7bb0889d,400,400,True,False,a3-9465-4a81-88fd-29fa19b26168.a8e0b079-6f12-4209-b040-2c081b63d194.jpg",
+    "sessions": [
+      {
+        "id": 136837,
+        "name": "ML.NET Model Lifecycle with Azure DevOps"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/marco_zamana",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/marco-zamana/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "fb0a2ca4-d763-48c7-adc5-4d6f7153afc2",
+    "firstName": "Massimo",
+    "lastName": "Bonanni",
+    "fullName": "Massimo Bonanni",
+    "bio": "Massimo is Azure Technical Trainer at Microsoft.\r\nHe spends his time to help customers to empower their Azure skills to achieve more and leverage the power of Azure in their solutions. \r\nMassimo is also a technical speaker both for local and international events and a user-group guy.\r\nHe is also passionate about biking, reading, and dogs!!",
+    "tagLine": "Azure Technical Trainer @ Microsoft",
+    "profilePicture": "https://sessionize.com/image?f=6d1447c78a2068c097693b0e66d5c483,400,400,True,False,a4-d763-48c7-adc5-4d6f7153afc2.edf5ca9d-439b-48c0-9935-14e2af008c10.jpg",
+    "sessions": [
+      {
+        "id": 156064,
+        "name": "Azure Functions or not Azure Functions, that is the question!"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/massimobonanni",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/massimobonanni/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "54384102-30f0-4d11-8228-4c2586516c8b",
+    "firstName": "Mattia",
+    "lastName": "De Rosa",
+    "fullName": "Mattia De Rosa",
+    "bio": "Mattia De Rosa è il Direttore della Divisione Cloud & Enterprise. In precedenza è stato responsabile delle soluzioni di Data Platform. Prima di entrare in Microsoft, ha maturato esperienze in Discovery Reply come Business Unit Manager, in SHS Multimedia Spa come Account Manager con la responsabilità della gestione di progetti innovativi per i grandi clienti e, infine, in IBM Italia in qualità di Technical Leader nell’area pervasive computing. Laureato con lode in Ingegneria Informatica a La Sapienza, è appassionato di Internet delle Cose e di Intelligenza Artificiale.",
+    "tagLine": "Cloud and Enterprise Business Group Lead",
+    "profilePicture": "https://sessionize.com/image?f=62982d3f7d958a92ce233602648bdbfc,400,400,True,False,02-30f0-4d11-8228-4c2586516c8b.847d43ad-45dd-41e8-9d0d-68edf1b59b13.jpg",
+    "sessions": [
+      {
+        "id": 150558,
+        "name": "Azure: a cloud with a purpose"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/dr_mattia",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/drmattia/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "b1c92247-23e6-400e-b7d0-9c6a54755f79",
+    "firstName": "Michele",
+    "lastName": "Aponte",
+    "fullName": "Michele Aponte",
+    "bio": "CEO e CTO di Blexin Srl (www.blexin.com), dove si occupa di sviluppo web e mobile su stack tecnologico Microsoft e JavaScript. Da sempre appassionato di community, è speaker alle principali conferenze nazionali e locali.",
+    "tagLine": "CEO/CTO Blexin Srl",
+    "profilePicture": "https://sessionize.com/image?f=b3869fcaa6a33a7c152c0396bd600196,400,400,True,False,47-23e6-400e-b7d0-9c6a54755f79.2a16d831-a4ba-47db-bb98-040a4ce69134.jpg",
+    "sessions": [
+      {
+        "id": 148013,
+        "name": "Implementing CQRS with Azure"
+      },
+      {
+        "id": 148015,
+        "name": "Workshop: Asp.Net Core e Angular in produzione con Docker e Kubernetes"
+      },
+      {
+        "id": 156071,
+        "name": "Workshop: Asp.Net Core e Angular in produzione con Docker e Kubernetes"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/apomic80",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/michele-aponte-1996038/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "276a63e2-fe7a-4c78-afc0-6d5f8253134d",
+    "firstName": "Pietro",
+    "lastName": "Libro",
+    "fullName": "Pietro Libro",
+    "bio": "I am passionate about technology in general and of the world of software development at 360°. Over the years I had the opportunity to work in various areas: public administration, financial and automation industry, allowing me to deal problems in a pragmatic way and find resolutions using patterns highlighted in other areas.",
+    "tagLine": "Senior Software Engineer Data Management at Zurich Insurance Group",
+    "profilePicture": "https://sessionize.com/image?f=67dba9bec480b8ab5a4b8ec7c09a93d5,400,400,True,False,e2-fe7a-4c78-afc0-6d5f8253134d.0c4c04b5-50a9-459e-9a91-fe023983ab63.jpg",
+    "sessions": [
+      {
+        "id": 138799,
+        "name": "Python, Azure Cosmos DB, Docker and Azure Container,  all inclusive"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/pietrolibro/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "5f820dd6-75a1-497f-a658-a5d6ef0b52ce",
+    "firstName": "Riccardo",
+    "lastName": "Cappello",
+    "fullName": "Riccardo Cappello",
+    "bio": "Ha scritto il suo primo programma a 15 anni in linguaggio C, da allora il mondo IT è parte integrante della sua vita. \r\n\r\nUtilizza Azure dal day one, sia per erogare in SaaS i prodotti sviluppati, sia per gestire l'ambiente di sviluppo e produzione in modalità Hybrid Cloud.\r\n\r\nMembro dello staff di DotNetToscana, con cui organizza eventi e tiene speech a conferenze tecniche. \r\n\r\nMicrosoft MVP nella categoria Microsoft Azure dal 2017.\r\nIntel Software Innovator dal 2018.",
+    "tagLine": "Cloud & Tech Wizard / Microsoft MVP / Intel Software Innovator",
+    "profilePicture": "https://sessionize.com/image?f=99b3e67a499920ec7f29c7c91eb22f99,400,400,True,False,c457ae25-a59c-43ac-99bd-cb0be1ace853.jpg",
+    "sessions": [
+      {
+        "id": 155520,
+        "name": "Azure Cognitive Search Deep Dive"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/rcappello",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/rcappello/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "7e4d64ef-bf01-4210-a543-6c0141234a96",
+    "firstName": "Riccardo",
+    "lastName": "Zamana",
+    "fullName": "Riccardo Zamana",
+    "bio": "I’m an accomplished, result driven management professional with 20 years of experience in both IT and business functions.\r\nProven history of managing complex IT operations and strategy for the development and delivery of high technological product and services.\r\nI’m highly skilled in proposal development and delivering business results by creating tailor made Cloud and IOT based solutions around the specific customer needs. My passions are to architect and build up teams of qualified professionals, redesign and streamline of software processes integrating more departments, delivering perfectly governed eco-systems. Decisional trees based on microservices plots, especially in OSS sauce, represent my greatest fun. Even if I'm historically voted to OSS / Java / Spring Platform, I learned (and I'm still learning) the wonders of the Azure platform every day.",
+    "tagLine": "Senior Solution Architect & Product Manager @ beanTech ",
+    "profilePicture": "https://sessionize.com/image?f=6f27c572d380f295badbbfb17de4b8d7,400,400,True,False,ef-bf01-4210-a543-6c0141234a96.0463b3a4-7986-47a2-86ce-87b073984b34.jpg",
+    "sessions": [
+      {
+        "id": 136311,
+        "name": "Reactive Systems with Event Grid"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/riccardozamana/",
+        "linkType": "LinkedIn"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/riccardozamana",
+        "linkType": "Twitter"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "6170e5c3-5a0c-4cb1-ba55-6dbd585385c8",
+    "firstName": "Silvia",
+    "lastName": "Spera",
+    "fullName": "Silvia Spera",
+    "bio": "I'm a math, App&Infra Cloud Solution Architect in Microsoft, tyech enthusiast and strongly passionate about narrative books",
+    "tagLine": "Microsoft Cloud Solution Architect",
+    "profilePicture": "https://sessionize.com/image?f=869349a51945199093f045dfb640f1ae,400,400,True,False,c3-5a0c-4cb1-ba55-6dbd585385c8.aa64d345-3c43-425d-9138-aa7429da9508.jpg",
+    "sessions": [
+      {
+        "id": 149865,
+        "name": "Azure Sentinel: set up automated threat responses in Azure through Logic Apps"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "95c417a6-27ac-40e7-8977-79b264595fc2",
+    "firstName": "Stefano",
+    "lastName": "Mostarda",
+    "fullName": "Stefano Mostarda",
+    "bio": "I'm a Software architect focused on web technologies. I've been working in the web since 2000 and have worked on almost every technology that have seen their birth and death in this crazy world. I'm one of the community managers of the italian largest web community, a regular book writer and conference speaker at italian conferences",
+    "tagLine": "Software Architect",
+    "profilePicture": "https://sessionize.com/image?f=592b4acd31fb980b089a1a0c1178cd15,400,400,True,False,a6-27ac-40e7-8977-79b264595fc2.13b368c3-3ec8-40b9-a0ec-9d68b87815f9.jpg",
+    "sessions": [
+      {
+        "id": 136547,
+        "name": "Azure configuration: Two store, One configuration, multiple applications"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/sm15455",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/stefanomostarda/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  }
+]
