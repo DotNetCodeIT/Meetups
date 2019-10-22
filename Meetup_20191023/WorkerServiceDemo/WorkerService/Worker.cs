@@ -19,7 +19,7 @@ namespace WorkerService
             _logger = logger;
         }
 
-        private string queueConnectionString = "DefaultEndpointsProtocol=https;AccountName=netcore3;AccountKey=d20jLAIbYLz/+tFcyGPokugBcZXAaY5mIo9KdomF9j/hJJzdZ9d7D4GYRcTlXkfduGYlMa/adrCyAZLZOZJq/Q==;EndpointSuffix=core.windows.net";
+        private string queueConnectionString = "DefaultEndpointsProtocol=https;AccountName=netcore3;EndpointSuffix=core.windows.net";
 
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
