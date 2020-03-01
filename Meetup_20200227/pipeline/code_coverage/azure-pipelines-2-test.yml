@@ -1,0 +1,24 @@
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  solution: '**/FoodSolution.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+
+- task: UseDotNet@2 
+  displayName: ".NET Core 3.1.x"
+  inputs:
+    version: '3.1.x'
+    packageType: sdk
+
+- task: DotNetCoreCLI@2
+  displayName: "Test"
+  inputs:
+    command: 'test'
+    projects: $(solution)
+    arguments: --configuration $(buildConfiguration)

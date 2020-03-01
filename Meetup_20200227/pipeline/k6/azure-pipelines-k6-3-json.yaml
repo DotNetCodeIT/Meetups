@@ -1,0 +1,32 @@
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-18.04'
+
+steps:
+- script: |
+    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
+    echo "deb https://dl.bintray.com/loadimpact/deb stable main" | sudo tee -a /etc/apt/sources.list
+    sudo apt-get update
+    sudo apt-get install k6
+  displayName: Install k6 tool
+
+- script: |
+    k6 version
+  displayName: Check if k6 is installed
+
+- script: |
+    k6 run --summary-export summary.json tests/performance/get_random_meal.js
+  displayName: Run k6 load test within Azure Pipelines
+
+- script: |
+    code=$(cat summary.json | jq '. | .metrics.checks.fails')
+    echo 'Totale falliti: ' $code
+    if [ $code -eq 0 ]  
+      then echo Check success
+      else exit 10
+    fi
+  displayName: Check errori
+  
+    
+  

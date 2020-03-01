@@ -1,0 +1,9 @@
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-18.04'
+
+steps:
+- script: |
+    docker run -i -v `pwd`:/src loadimpact/k6 run -i 1 -u 1 /src/tests/performance/get_foods.js
+  displayName: Run k6 from Docker

@@ -1,0 +1,43 @@
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  solution: '**/FoodSolution.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+
+- task: UseDotNet@2 
+  displayName: ".NET Core 3.1.x"
+  inputs:
+    version: '3.1.x'
+    packageType: sdk
+
+- task: DotNetCoreCLI@2
+  displayName: "Test"
+  inputs:
+    command: 'test'
+    projects: $(solution)
+    arguments: --configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=$(Build.SourcesDirectory)/coverage/
+
+- script: >-
+    dotnet tool install dotnet-reportgenerator-globaltool 
+    --global 
+#    --version $(reportGenerator_Version)
+  displayName: "Install code coverage report generator tool"
+
+- script: >-
+    reportgenerator 
+    "-reports:$(Build.SourcesDirectory)/coverage/*.xml" 
+    "-targetdir:$(Build.SourcesDirectory)/coverage/html" 
+    "-reporttypes:Cobertura;HtmlInline_AzurePipelines;Badges"
+  displayName: Generate code coverage report
+
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'cobertura'
+    summaryFileLocation: $(Build.SourcesDirectory)/coverage/html/Cobertura.xml
+    reportDirectory: $(Build.SourcesDirectory)/coverage/html
