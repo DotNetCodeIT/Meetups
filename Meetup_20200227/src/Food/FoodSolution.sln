@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Food.API", "Food.API\Food.API.csproj", "{859F6CD2-BB2E-42A3-8B50-F57C21E8E024}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Food.API.UnitTests", "Food.API.UnitTests\Food.API.UnitTests.csproj", "{EBE2450B-A020-47AF-8143-883ABB8FE5BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{859F6CD2-BB2E-42A3-8B50-F57C21E8E024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{859F6CD2-BB2E-42A3-8B50-F57C21E8E024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{859F6CD2-BB2E-42A3-8B50-F57C21E8E024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{859F6CD2-BB2E-42A3-8B50-F57C21E8E024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE2450B-A020-47AF-8143-883ABB8FE5BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE2450B-A020-47AF-8143-883ABB8FE5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE2450B-A020-47AF-8143-883ABB8FE5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE2450B-A020-47AF-8143-883ABB8FE5BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34868541-E39B-446C-935B-C0F838B5DEC3}
+	EndGlobalSection
+EndGlobal
